@@ -12,7 +12,7 @@ const path = {
   src: {
     html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
     css: source_folder + "/scss/style.scss",
-    js: source_folder + "/js/script.js",
+    js: source_folder + "/js/*.js",
     img: source_folder + "/img/**/*.+(png|jpg|gif|ico|svg|webp|mp4)",
     fonts: source_folder + "/fonts/**/*.*",
   },
@@ -87,8 +87,16 @@ function scripts() {
     path.src.js,
   ])
     .pipe(fileinclude())
-    .pipe(concat("script.min.js"))
+
+    .pipe(concat("script.js"))
+    .pipe(dest(path.build.js))
+
     .pipe(uglify())
+
+    .pipe(rename({
+      suffix: ".min"
+    }))
+
     .pipe(dest(path.build.js))
     .pipe(browsersync.stream());
 }
