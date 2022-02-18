@@ -1,50 +1,30 @@
+@import "variables.scss";
 @import "mixins.scss";
 @import "fonts.scss";
 
-$fontfamily: "";
+// Заменила файл с обнулением всего на normalize. Убери обратно, если не понравится
+@import "normalize.scss";
+// @import "null.scss";
 
-.body-scroll {
-	overflow-y: hidden
-}
+@import "general.scss";
 
+/* blocks start */
 
+@import "blocks/container.scss";
+@import "blocks/section.scss";
+@import "blocks/title.scss";
 
-$minwidth: 320px;
-$mw: 1440;
-//$md1: $mw + 12;
-//$md2: 991.98;
-//$md3: 767.98;
-//$md4: 479.98;
+@import "blocks/advantages.scss";
 
-@import "null.scss";
-body {
-	&.lock {
-		overflow: hidden;
-	}
-}
+@import "blocks/prices.scss";
 
-//.wrapper {
-//	width: 100%;
-//	min-height: 100%;
-//	overflow: hidden;
-//	&.loaded {
-//	}
-//}
+/* wp стили (нужны только для верстки. В финале удалить) СТАРТ */
+@import "blocks/test.scss";
+/* wp стили (нужны только для верстки. В финале удалить) КОНЕЦ */
 
-.container {
-	max-width: $mw + px;
-	margin: 0 auto;
-	width: 100%;
-	//@media (max-width: $md1+px) {
-	//	max-width: 970px;
-	//}
-	//@media (max-width: $md2+px) {
-	//	max-width: 750px;
-	//}
-	//@media (max-width: $md3+px) {
-	//	max-width: none;
-	//	padding: 0 10px;
-	//}
-}
+@import "blocks/wp-content.scss";
+
+/* blocks end */
+
 @import "header.scss";
 @import "footer.scss";
