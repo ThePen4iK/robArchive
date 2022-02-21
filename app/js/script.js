@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const burger = document.querySelector(".hamburger"),
         header = document.querySelector(".header"),
-        startScreen = document.querySelector('.js-start-screen'),
+        startScreen = document.querySelector('.js-main'),
         html = document.documentElement;
         headerFixed = startScreen.offsetHeight;
 
