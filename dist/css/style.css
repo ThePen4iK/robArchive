@@ -462,7 +462,7 @@ img {
     padding-bottom: 70px;
   }
 }
-.main > .container {
+.main__container {
   height: 100%;
 }
 .main__bg img {
@@ -504,6 +504,9 @@ img {
 .main__subtitle {
   width: 100%;
   max-width: 512px;
+}
+.main__subtitle--white {
+  color: #FFFFFF;
 }
 
 .advantages {
