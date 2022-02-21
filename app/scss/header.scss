@@ -186,7 +186,7 @@
     display: none;
   }
 
-  @media(any-hover: hover) {
+  @media(max-width: 576px) {
     &:hover {
       cursor: pointer;
 

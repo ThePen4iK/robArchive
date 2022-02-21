@@ -1,7 +1,12 @@
 <section class="main js-main">
     <div class="main__bg">
-        <picture>
-        <img src="../img/main-start-screen-bg.jpg" alt="start screen bg">
+        <picture class="picture">
+            <source
+                    media="(min-width: 375px)"
+                    srcset="../img/main-start-screen-bg--mob.jpg"
+                    srcset="../img/main-start-screen-bg--mob@2x.jpg 2x"
+            />
+            <img src="../img/main-start-screen-bg.jpg" alt="start screen bg">
         </picture>
     </div>
     <div class="container">

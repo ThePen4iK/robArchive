@@ -465,7 +465,7 @@ img {
 .main > .container {
   height: 100%;
 }
-.main__bg > img {
+.main__bg img {
   position: absolute;
   top: 0;
   left: 0;
@@ -4996,7 +4996,7 @@ pre.wp-block-verse {
     display: none;
   }
 }
-@media (any-hover: hover) {
+@media (max-width: 576px) {
   .hamburger:hover {
     cursor: pointer;
   }
