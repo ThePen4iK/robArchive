@@ -459,6 +459,7 @@ img {
 @media (min-width: 1440px) {
   .start-screen {
     min-height: 917px;
+    padding-bottom: 70px;
   }
 }
 .start-screen > .container {
@@ -4800,11 +4801,18 @@ pre.wp-block-verse {
 .header__fixed .logo-icon {
   color: #081F28;
 }
+.header__fixed .menu-item > a {
+  color: #081F28;
+}
 .header__fixed .hamburger {
   background: #081F28;
 }
 .header__fixed .hamburger > .hamburger-menu > .hamburger-line {
   background-color: #FFFFFF;
+}
+.header__fixed .btn {
+  background: #0f3a4c;
+  color: #FFFFFF;
 }
 .header__wrapper {
   position: absolute;
@@ -4852,6 +4860,9 @@ pre.wp-block-verse {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media (min-width: 1440px) {
