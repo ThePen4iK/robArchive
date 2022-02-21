@@ -4,31 +4,50 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <link rel="icon" href="../img/favicon.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css" />
-  <title>123</title>
+  <title>Main</title>
 </head>
 
 
 <body>
   <header class="header">
-  <nav class="header__navigation ">
-    <ul id="menu-menyu-v-shapke-sajta" class="header__list">
-      <li class="menu-item">
-        <a href="/">
-          Главная
+    <div class="container">
+        <a href="index.html" class="logo">
+            <svg class="logo-icon" width="101" height="52">
+                <use xlink:href="./img/sprite.svg#logo"></use>
+            </svg>
         </a>
-      </li>
-      <li class="menu-item">
-        <a href="/about.html">
-          О компании
-        </a>
-      </li>
-      <li class="menu-item"><a href="/news.html">Новости</a></li>
-      <li class="menu-item"><a href="/vacancies.html" aria-current="page">Вакансии</a></li>
-      <li class="menu-item"><a href="/prices.html">Цены</a></li>
-    </ul>
-  </nav>
+        <div class="header__wrapper">
+            <nav class="header__navigation ">
+                <ul id="menu-menyu-v-shapke-sajta" class="header__list">
+                    <li class="menu-item">
+                        <a href="/">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/about.html">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="menu-item"><a href="/news.html">Новости</a></li>
+                    <li class="menu-item"><a href="/vacancies.html" aria-current="page">Вакансии</a></li>
+                    <li class="menu-item"><a href="/prices.html">Цены</a></li>
+                </ul>
+            </nav>
+            <button class="btn">Связаться</button>
+        </div>
+        <button class="hamburger">
+            <div class="hamburger-menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </button>
+    </div>
 </header>
   <h1 class="title">Новости</h1>
 

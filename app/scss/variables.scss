@@ -1,4 +1,11 @@
 // Не знаю: используеш ты эти переменные или нет, но без них некоторые scss ломались при сборке
 // Перееменные в отдельном файле лучше хранить, если используешь их
 $minwidth: 320;
-$fontfamily: "";
+$fontfamily: "font-family: 'Inter', sans-serif;";
+
+$white: #ffffff;
+$blue-dark: #0F3A4C;
+$black: #081F28;
+$grey: #9C9C9C;
+$blue-light: #517FAD;
+$grey-blue: #D2E7FC;
