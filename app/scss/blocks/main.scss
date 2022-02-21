@@ -9,7 +9,7 @@
     min-height: 917px;
     padding-bottom: 70px;
   }
-  &>.container{
+  &__container{
     height: 100%;
   }
   &__bg{
@@ -50,8 +50,10 @@
     margin-bottom: 20px;
   }
   &__subtitle{
-
     width: 100%;
     max-width: 512px;
+    &--white{
+      color: #FFFFFF;
+    }
   }
 }
