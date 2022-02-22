@@ -515,6 +515,12 @@ img {
   padding-top: 150px;
   padding-bottom: 150px;
 }
+@media (min-width: 1024px) {
+  .about {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 .about__container {
   position: relative;
 }
@@ -878,7 +884,7 @@ img {
     -ms-grid-column: 3;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1360px) {
   .advantages__list {
     display: -ms-grid;
     display: grid;
@@ -1305,6 +1311,89 @@ img {
     margin: 0;
   }
 }
+/* repeat blocks*/
+.accordion {
+  background: transparent;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+.accordion__number {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0F3A4C;
+}
+.accordion__title {
+  margin: 0 18px 0 30px;
+}
+.accordion__title > h5 {
+  font-family: "Druk Wide Cyr", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0F3A4C;
+}
+.accordion__icon {
+  width: 100%;
+  max-width: 24px;
+  height: 24px;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.accordion__icon--active {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.accordion__content {
+  overflow: hidden;
+  width: 100%;
+  margin: 20px auto 0;
+  max-width: 553px;
+}
+.accordion__content > p, .accordion__content h1, .accordion__content h2, .accordion__content h3, .accordion__content h4, .accordion__content h5, .accordion__content h6, .accordion__content ul, .accordion__content ol {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #9c9c9c;
+}
+@media (any-hover: hover) {
+  .accordion:hover .accordion__icon {
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    color: #517FAD;
+  }
+}
+
+.changed {
+  -webkit-transition: height 0.5s ease-out;
+  -o-transition: height 0.5s ease-out;
+  transition: height 0.5s ease-out;
+}
+
 /* wp стили (нужны только для верстки. В финале удалить) СТАРТ */
 .wp-block-archives-dropdown label {
   display: block;

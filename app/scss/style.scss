@@ -19,8 +19,17 @@
 @import "blocks/main.scss";
 @import "blocks/about.scss";
 @import "blocks/advantages.scss";
+@import "blocks/faq.scss";
+
 
 @import "blocks/prices.scss";
+
+
+/* repeat blocks*/
+@import "blocks/accordion.scss";
+
+
+
 
 /* wp стили (нужны только для верстки. В финале удалить) СТАРТ */
 @import "blocks/test.scss";
