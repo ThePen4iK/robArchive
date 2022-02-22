@@ -3,86 +3,91 @@
 @@include('blocks/_head.html')
 
 <body>
-  @@include('blocks/_header.html')
-  @@include('blocks/_main.html')
-  <h1 class="title">Главная</h1>
+@@include('blocks/_header.html')
+<main class="main-section">
+    @@include('blocks/_main.html')
+    @@include('blocks/_about.html')
+    <!--  <h1 class="title">Главная</h1>-->
 
-  <section class="advantages section">
-    <div class="advantages__wrapper container">
-      <h2 class="advantages__title title title--white">
-        Преимущества: </h2>
-
-
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <h3 class="advantages__name">
-            1. Максимальная сохранность документов </h3>
-          <p class="advantages__text">
-            Система активной пожарной безопасности, обеспечивающая пониженный уровень содержания кислорода в воздухе,
-            исключающая горение либо иное повреждение документов </p>
-        </li>
-
-        <li class="advantages__item">
-          <h3 class="advantages__name">
-            2.Современное оборудование </h3>
-          <p class="advantages__text">
-            Крупнейший в Германии завод металлоконструкций BITO-Lagertechnik, мировой лидер по производству конвейерной
-            техники австрийской компании TGW, крупнейший производитель кранов-штабелеров немецкой фирмы
-            DambachLagersysteme </p>
-        </li>
-
-        <li class="advantages__item advantages__item--image-big">
-          <img src="http://roboarchive/wp-content/uploads/2022/02/2-690x250.jpg" alt="img">
-        </li>
-        <li class="advantages__item advantages__item--image-small">
-          <img src="http://roboarchive/wp-content/uploads/2022/02/1-334x281.jpg" alt="img">
-        </li>
-
-        <li class="advantages__item">
-          <h3 class="advantages__name">
-            3. Интеллектуальная система управления архивом </h3>
-          <p class="advantages__text">
-            Адресное размещение единиц хранения, учет и контроль перемещения </p>
-        </li>
-
-        <li class="advantages__item">
-          <h3 class="advantages__name">
-            4. Конфиденциальность </h3>
-          <p class="advantages__text">
-            Видеонаблюдение и контроль доступа </p>
-        </li>
-
-        <li class="advantages__item">
-          <h3 class="advantages__name">
-            5. Интегрированная система безопасности </h3>
-          <p class="advantages__text">
-            Защита персональных данных, хранящихся в архиве </p>
-        </li>
+    <section class="advantages section">
+        <div class="advantages__wrapper container">
+            <h2 class="advantages__title title title--white">
+                Преимущества: </h2>
 
 
-      </ul>
+            <ul class="advantages__list">
+                <li class="advantages__item">
+                    <h3 class="advantages__name">
+                        1. Максимальная сохранность документов </h3>
+                    <p class="advantages__text">
+                        Система активной пожарной безопасности, обеспечивающая пониженный уровень содержания кислорода в
+                        воздухе,
+                        исключающая горение либо иное повреждение документов </p>
+                </li>
 
-    </div>
-  </section>
+                <li class="advantages__item">
+                    <h3 class="advantages__name">
+                        2.Современное оборудование </h3>
+                    <p class="advantages__text">
+                        Крупнейший в Германии завод металлоконструкций BITO-Lagertechnik, мировой лидер по производству
+                        конвейерной
+                        техники австрийской компании TGW, крупнейший производитель кранов-штабелеров немецкой фирмы
+                        DambachLagersysteme </p>
+                </li>
 
-  <!-- Контентная часть для попапа Политики -->
-  <div class="wp-content wp-content--small wp-content--privacy">
-    <strong>1. Общие положения</strong>
-    <br>
-    Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от
-    27.07.2006. №152-ФЗ «О персональных данных» (далее - Закон о персональных данных) и определяет порядок обработки
-    персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые Михайловым Иваном
-    Сергеевичем (далее – Оператор).
-    <br>
-    1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод
-    человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной
-    жизни, личную и семейную тайну.
-    <br>
-    1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется ко всей
-    информации.
-  </div>
+                <li class="advantages__item advantages__item--image-big advantages__item--mod">
+<!--                    <img src="http://roboarchive/wp-content/uploads/2022/02/2-690x250.jpg" alt="img">-->
+                    <img src="../img/advantages-big.jpg" alt="img">
+                </li>
+                <li class="advantages__item advantages__item--image-small advantages__item--mod">
+<!--                    <img src="http://roboarchive/wp-content/uploads/2022/02/1-334x281.jpg" alt="img">-->
+                    <img src="../img/advantages-small.jpg" alt="img">
+                </li>
 
-  <script src="./js/script.js"></script>
+                <li class="advantages__item">
+                    <h3 class="advantages__name">
+                        3. Интеллектуальная система управления архивом </h3>
+                    <p class="advantages__text">
+                        Адресное размещение единиц хранения, учет и контроль перемещения </p>
+                </li>
+
+                <li class="advantages__item">
+                    <h3 class="advantages__name">
+                        4. Конфиденциальность </h3>
+                    <p class="advantages__text">
+                        Видеонаблюдение и контроль доступа </p>
+                </li>
+
+                <li class="advantages__item">
+                    <h3 class="advantages__name">
+                        5. Интегрированная система безопасности </h3>
+                    <p class="advantages__text">
+                        Защита персональных данных, хранящихся в архиве </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Контентная часть для попапа Политики -->
+<!--    <div class="wp-content wp-content&#45;&#45;small wp-content&#45;&#45;privacy">-->
+<!--        <strong>1. Общие положения</strong>-->
+<!--        <br>-->
+<!--        Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от-->
+<!--        27.07.2006. №152-ФЗ «О персональных данных» (далее - Закон о персональных данных) и определяет порядок обработки-->
+<!--        персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые Михайловым Иваном-->
+<!--        Сергеевичем (далее – Оператор).-->
+<!--        <br>-->
+<!--        1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод-->
+<!--        человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность-->
+<!--        частной-->
+<!--        жизни, личную и семейную тайну.-->
+<!--        <br>-->
+<!--        1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется ко-->
+<!--        всей-->
+<!--        информации.-->
+<!--    </div>-->
+</main>
+<script src="./js/script.js"></script>
 </body>
 
 
