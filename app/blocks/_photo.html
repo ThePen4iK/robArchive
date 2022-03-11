@@ -1,0 +1,53 @@
+<section class="section photo">
+    <div class="container">
+        <div class="smi__wrapper">
+            <h2 class="smi__title title">Фотогалерея</h2>
+            <div class="smi__navigation slider__navigation">
+                <div class="arrow__prev arrow__prev--photo">
+                    <svg class="arrow__icon" width="28" height="26">
+                        <use xlink:href="../img/sprite.svg#arrow-prev"></use>
+                    </svg>
+                </div>
+                <div class="arrow__next arrow__next--photo">
+                    <svg class="arrow__icon" width="28" height="26">
+                        <use xlink:href="../img/sprite.svg#arrow-next"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="swiper photo__swiper">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide photo__slide">
+                    <picture class="picture">
+                        <source
+                                media="(min-width: 600px)"
+                                srcset="../img/photo-slide-1-descr.jpg, ../img/photo-slide-1-descr@2x.jpg 1.25x"
+                        />
+                        <img class="photo__img" src="./img/photo-slide-1.jpg" alt="photo 1">
+                    </picture>
+                </div>
+                <div class="swiper-slide photo__slide">
+                    <picture class="picture">
+                        <source
+                                media="(min-width: 600px)"
+                                srcset="../img/photo-slide-2-descr.jpg, ../img/photo-slide-2-descr@2x.jpg 1.25x"
+                        />
+                        <img class="photo__img" src="./img/photo-slide-2.jpg" alt="photo 2">
+                    </picture>
+                </div>
+                <div class="swiper-slide photo__slide">
+                    <picture class="picture">
+                        <source
+                                media="(min-width: 600px)"
+                                srcset="../img/photo-slide-3-descr.jpg, ../img/photo-slide-3-descr@2x.jpg 1.25x"
+                        />
+                        <img class="photo__img" src="./img/photo-slide-3.jpg" alt="photo 3">
+                    </picture>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>

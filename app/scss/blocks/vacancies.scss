@@ -1,0 +1,37 @@
+.vacancies{
+
+  &__wrapper{
+    padding-top: 40px;
+    @media(min-width: 1200px){
+      padding-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      margin-bottom: 40px;
+    }
+    @media(min-width: 1440px){
+      gap: 50px 112px;
+    }
+  }
+  &__wrap{
+    margin-bottom: 30px;
+    @media(min-width: 1200px){
+      flex: 0 0 45%;
+    }
+    @media(min-width: 1440px){
+      flex: 0 0 561px;
+    }
+     &>.subtitle{
+      font-family: "Inter", sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #0F3A4C;
+      margin-bottom: 20px;
+    }
+  }
+}
+

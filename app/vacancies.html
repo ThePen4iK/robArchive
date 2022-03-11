@@ -3,48 +3,211 @@
 @@include('blocks/_head.html')
 
 <body>
-  @@include('blocks/_header.html')
-  <h1 class="title">Вакансии</h1>
-  <!-- Классы можно любые везде добавлять кроме wp-content. wp-content - не менять. 
-    Его можно во что-то обернуть, чтобы ширину задать, но в стили самого wp-content не лезть другими классами или вложенностью
-     -->
-  <section class="">
-    <div class="container">
-      <h2 class="title">Открытые вакансии</h2>
+@@include('blocks/_header.html')
 
-      <div class="">
-        <h3 class="subtitle">Обязанности</h3>
-        <div class="wp-content wp-content--small wp-content--gray">
-          <p>Здесь автор сталкивает два таких достаточно далёких друг от друга явления как акцентуированная личность
-            понимает возрастной психоз, как и предсказывает теория о бесполезном знании. Апперцепция важно представляет
-            собой возрастной стресс. По их почти единодушному мнению, комплекс отчуждает групповой код.</p>
-        </div>
-        <h3 class="subtitle">Требования</h3>
-        <div class="wp-content wp-content--small wp-content--gray">
-          <ul>
-            <li>Высшее образование в области<br />
-              «Технологические машины и оборудование»</li>
-            <li>Опыт работы от 2 лет</li>
-            <li>Ответсвенность</li>
-            <li>Внимательность</li>
-            <li>Трудолюбие</li>
-          </ul>
-        </div>
-        <h3 class="subtitle">Условия</h3>
-        <div class="wp-content wp-content--small wp-content--gray">
-          <p>Здесь автор сталкивает два таких достаточно далёких друг от друга явления как акцентуированная личность
-            понимает возрастной психоз, как и предсказывает теория о бесполезном знании. Апперцепция важно представляет
-            собой возрастной стресс. По их почти единодушному мнению, комплекс отчуждает групповой код.</p>
-        </div>
-        <h3 class="subtitle">Режим работы</h3>
-        <div class="wp-content wp-content--small wp-content--gray">
-          <p>Пн-Пт с 9:00 до 18:00.</p>
-        </div>
+<!-- Классы можно любые везде добавлять кроме wp-content. wp-content - не менять.
+  Его можно во что-то обернуть, чтобы ширину задать, но в стили самого wp-content не лезть другими классами или вложенностью
+   -->
+<main class="main-section">
+    @@include('blocks/_start-vacancies.html')
+    <section class="vacancies section">
+        <div class="container">
+            <h2 class="title vacancies__title">Открытые вакансии</h2>
 
-      </div>
+            <ul class="faq__list faq__list--vacancies">
+                <li class="faq__item faq__item--vacancies">
+                    <button class="accordion accordion--vacancies">
+                        <span class="accordion__title accordion__title--vacancies">Специалист по настройке ПО</span>
+                    </button>
+                    <div class="accordion__content accordion__content--vacancies">
+                        <div class="vacancies__wrapper">
+                            <div class="vacancies__wrap">
+                                <h3 class="subtitle">Обязанности</h3>
+                                <div class="wp-content wp-content--small wp-content--gray">
+                                    <p>Здесь автор сталкивает два таких достаточно далёких друг от друга явления как
+                                        акцентуированная
+                                        личность
+                                        понимает возрастной психоз, как и предсказывает теория о бесполезном знании.
+                                        Апперцепция
+                                        важно
+                                        представляет
+                                        собой возрастной стресс. По их почти единодушному мнению, комплекс отчуждает
+                                        групповой
+                                        код.</p>
+                                </div>
+                            </div>
+                            <div class="vacancies__wrap">
+                                <h3 class="subtitle">Требования</h3>
+                                <div class="wp-content wp-content--small wp-content--gray">
+                                    <ul>
+                                        <li>Высшее образование в области<br/>
+                                            «Технологические машины и оборудование»
+                                        </li>
+                                        <li>Опыт работы от 2 лет</li>
+                                        <li>Ответсвенность</li>
+                                        <li>Внимательность</li>
+                                        <li>Трудолюбие</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="vacancies__wrap">
+                                <h3 class="subtitle">Условия</h3>
+                                <div class="wp-content wp-content--small wp-content--gray">
+                                    <p>Здесь автор сталкивает два таких достаточно далёких друг от друга явления как
+                                        акцентуированная
+                                        личность
+                                        понимает возрастной психоз, как и предсказывает теория о бесполезном знании.
+                                        Апперцепция
+                                        важно
+                                        представляет
+                                        собой возрастной стресс. По их почти единодушному мнению, комплекс отчуждает
+                                        групповой
+                                        код.</p>
+                                </div>
+                            </div>
+                            <div class="vacancies__wrap">
+                                <h3 class="subtitle">Режим работы</h3>
+                                <div class="wp-content wp-content--small wp-content--gray">
+                                    <p>Пн-Пт с 9:00 до 18:00.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn--vacancies">Откликнуться</button>
+                    </div>
+                </li>
 
-    </div>
-  </section>
+                <li class="faq__item faq__item--vacancies">
+                    <button class="accordion accordion--vacancies">
+                        <span class="accordion__title accordion__title--vacancies">Инженер</span>
+                    </button>
+                    <div class="accordion__content accordion__content--vacancies">
+                        <div class="vacancies__wrapper">
+                            <div class="vacancies__wrap">
+                                <h3 class="subtitle">Обязанности</h3>
+                                <div class="wp-content wp-content--small wp-content--gray">
+                                    <p>Здесь автор сталкивает два таких достаточно далёких друг от друга явления как
+                                        акцентуированная
+                                        личность
+                                        понимает возрастной психоз, как и предсказывает теория о бесполезном знании.
+                                        Апперцепция
+                                        важно
+                                        представляет
+                                        собой возрастной стресс. По их почти единодушному мнению, комплекс отчуждает
+                                        групповой
+                                        код.</p>
+                                </div>
+                            </div>
+                            <div class="vacancies__wrap">
+                                <h3 class="subtitle">Требования</h3>
+                                <div class="wp-content wp-content--small wp-content--gray">
+                                    <ul>
+                                        <li>Высшее образование в области<br/>
+                                            «Технологические машины и оборудование»
+                                        </li>
+                                        <li>Опыт работы от 2 лет</li>
+                                        <li>Ответсвенность</li>
+                                        <li>Внимательность</li>
+                                        <li>Трудолюбие</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="vacancies__wrap">
+                                <h3 class="subtitle">Условия</h3>
+                                <div class="wp-content wp-content--small wp-content--gray">
+                                    <p>Здесь автор сталкивает два таких достаточно далёких друг от друга явления как
+                                        акцентуированная
+                                        личность
+                                        понимает возрастной психоз, как и предсказывает теория о бесполезном знании.
+                                        Апперцепция
+                                        важно
+                                        представляет
+                                        собой возрастной стресс. По их почти единодушному мнению, комплекс отчуждает
+                                        групповой
+                                        код.</p>
+                                </div>
+                            </div>
+                            <div class="vacancies__wrap">
+                                <h3 class="subtitle">Режим работы</h3>
+                                <div class="wp-content wp-content--small wp-content--gray">
+                                    <p>Пн-Пт с 9:00 до 18:00.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn--vacancies">Откликнуться</button>
+                    </div>
+                </li>
+
+                <li class="faq__item faq__item--vacancies">
+                    <button class="accordion accordion--vacancies">
+                        <span class="accordion__title accordion__title--vacancies">Секретарь</span>
+                    </button>
+                    <div class="accordion__content accordion__content--vacancies">
+                        <div class="vacancies__wrapper">
+                            <div class="vacancies__wrap">
+                                <h3 class="subtitle">Обязанности</h3>
+                                <div class="wp-content wp-content--small wp-content--gray">
+                                    <p>Здесь автор сталкивает два таких достаточно далёких друг от друга явления как
+                                        акцентуированная
+                                        личность
+                                        понимает возрастной психоз, как и предсказывает теория о бесполезном знании.
+                                        Апперцепция
+                                        важно
+                                        представляет
+                                        собой возрастной стресс. По их почти единодушному мнению, комплекс отчуждает
+                                        групповой
+                                        код.</p>
+                                </div>
+                            </div>
+                            <div class="vacancies__wrap">
+                                <h3 class="subtitle">Требования</h3>
+                                <div class="wp-content wp-content--small wp-content--gray">
+                                    <ul>
+                                        <li>Высшее образование в области<br/>
+                                            «Технологические машины и оборудование»
+                                        </li>
+                                        <li>Опыт работы от 2 лет</li>
+                                        <li>Ответсвенность</li>
+                                        <li>Внимательность</li>
+                                        <li>Трудолюбие</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="vacancies__wrap">
+                                <h3 class="subtitle">Условия</h3>
+                                <div class="wp-content wp-content--small wp-content--gray">
+                                    <p>Здесь автор сталкивает два таких достаточно далёких друг от друга явления как
+                                        акцентуированная
+                                        личность
+                                        понимает возрастной психоз, как и предсказывает теория о бесполезном знании.
+                                        Апперцепция
+                                        важно
+                                        представляет
+                                        собой возрастной стресс. По их почти единодушному мнению, комплекс отчуждает
+                                        групповой
+                                        код.</p>
+                                </div>
+                            </div>
+                            <div class="vacancies__wrap">
+                                <h3 class="subtitle">Режим работы</h3>
+                                <div class="wp-content wp-content--small wp-content--gray">
+                                    <p>Пн-Пт с 9:00 до 18:00.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn--vacancies">Откликнуться</button>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+    </section>
+
+    @@include('blocks/_contact-vacancies.html')
+</main>
+@@include('blocks/_footer.html')
+<script src="js/script.min.js"></script>
 </body>
 
 </html>

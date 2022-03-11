@@ -1,0 +1,124 @@
+.history{
+  overflow: hidden;
+
+  &__swiper{
+    overflow: hidden;
+
+
+  }
+
+  &__slide{
+    @media(min-width: 992px){
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+
+    &-timeline{
+      margin-left: 31px;
+      margin-top: 31px;
+      flex: 0 0 55px;
+
+      @media(min-width: 1440px){
+        margin-left: 80px;
+      }
+      &.swiper-slide-active{
+        &>.history__date{
+          top: -120px;
+          color: #0F3A4C;
+          @media(min-width: 1440px){
+            top: -190px;
+            font-size: 48px;
+            line-height: 58px;
+          }
+          &:before{
+            top: calc(100% + 70px);
+            background: #0F3A4C;
+            @media(min-width: 1440px){
+              top: calc(100% + 100px);
+            }
+          }
+          &:after{
+            content: '';
+            position: absolute;
+            top: calc(100% + 30px);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1px;
+            height: 30px;
+            background: #9C9C9C;
+            @media(min-width: 1440px){
+              height: 51px;
+              top: calc(100% + 42px);
+
+            }
+          }
+        }
+      }
+    }
+  }
+  &__img{
+    margin-bottom: 30px;
+    @media(min-width: 992px){
+      margin-bottom: 0;
+    }
+  }
+  &__text{
+  color: #9c9c9c;
+    width: 100%;
+    max-width: 345px;
+    @media(min-width: 768px){
+      max-width: 335px;
+    }
+    @media(min-width: 992px){
+      margin-left: 20px;
+    }
+  }
+  &__timeline{
+
+    margin-top: 160px;
+    margin-left: 15px;
+    padding-left: 15px;
+    border-top: 1px solid #BBCBDB;
+    @media(min-width: 768px){
+      margin-left: 0;
+    }
+    @media(min-width: 1024px){
+      margin-top: 100px;
+    }
+    @media(min-width: 1599px){
+      width: 100%;
+      max-width: 1430px;
+      margin: 100px auto 0;
+      padding: 0 15px;
+    }
+
+  }
+
+  &__date{
+    font-family: "Druk Wide Cyr", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #9c9c9c;
+
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: calc(100% - 50px);
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #517FAD;
+    }
+  }
+
+
+}

@@ -1,91 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 @@include('blocks/_head.html')
 
 <body>
-  @@include('blocks/_header.html')
-  <h1 class="title">О компании</h1>
+@@include('blocks/_header.html')
+<!--  <h1 class="title">О компании</h1>-->
 
-  <!-- Классы можно любые везде добавлять кроме wp-content. wp-content - не менять. 
-    Его можно во что-то обернуть, чтобы ширину задать, но в стили самого wp-content не лезть другими классами или вложенностью
-     -->
-  <div class="container">
-    <div class="wp-content wp-content--about wp-content--small wp-content--gray">
 
-      <div class="wp-block-columns">
-        <div class="wp-block-column" style="flex-basis:690px">
-          <h2 id="главархив-самый-крупный-в-европе-автоматизированный-комплекс-архивного-хранилища">Главархив&nbsp;—
-            самый крупный в&nbsp;Европе автоматизированный комплекс архивного хранилища</h2>
+<main class="main-section">
+    @@include('blocks/_start-about.html')
+
+
+    <!-- Классы можно любые везде добавлять кроме wp-content. wp-content - не менять.
+   Его можно во что-то обернуть, чтобы ширину задать, но в стили самого wp-content не лезть другими классами или вложенностью
+    -->
+    <section class="section">
+        <div class="container">
+            <div class="wp-content wp-content--about wp-content--small wp-content--gray">
+
+                <div class="wp-block-columns">
+                    <div class="wp-block-column" style="flex-basis:690px">
+                        <h2 id="главархив-самый-крупный-в-европе-автоматизированный-комплекс-архивного-хранилища">
+                            Главархив&nbsp;—
+                            самый крупный в&nbsp;Европе автоматизированный комплекс архивного хранилища</h2>
+                    </div>
+
+
+                    <div class="wp-block-column" style="flex-basis:614px">
+                        <p>Главное архивное управление города Москвы осуществляет функции по разработке и реализации
+                            государственной
+                            политики в сфере архивного дела, осуществляет региональный государственный контроль за
+                            соблюдением
+                            законодательства об архивном деле.</p>
+
+
+                        <p>Его основной целью является обеспечение максимальной доступности хранящихся в архивах
+                            документов.</p>
+                    </div>
+                </div>
+
+                <div class="wp-block-columns">
+                    <div class="wp-block-column" style="flex-basis:690px">
+                        <figure class="wp-block-image size-full"><img loading="lazy" width="690" height="505"
+                                                                      src="http://roboarchive/wp-content/uploads/2022/02/1-1.jpg"
+                                                                      alt="" class="wp-image-98"
+                                                                      srcset="http://roboarchive/wp-content/uploads/2022/02/1-1.jpg 690w, http://roboarchive/wp-content/uploads/2022/02/1-1-300x220.jpg 300w, http://roboarchive/wp-content/uploads/2022/02/1-1-683x500.jpg 683w, http://roboarchive/wp-content/uploads/2022/02/1-1-342x250.jpg 342w, http://roboarchive/wp-content/uploads/2022/02/1-1-334x244.jpg 334w, http://roboarchive/wp-content/uploads/2022/02/1-1-425x311.jpg 425w"
+                                                                      sizes="(max-width: 690px) 100vw, 690px"/></figure>
+
+                    </div>
+
+
+                    <div class="wp-block-column" style="flex-basis:614px">
+                        <figure class="wp-block-image size-full"><img loading="lazy" width="614" height="449"
+                                                                      src="http://roboarchive/wp-content/uploads/2022/02/1-2.jpg"
+                                                                      alt="" class="wp-image-97"
+                                                                      srcset="http://roboarchive/wp-content/uploads/2022/02/1-2.jpg 614w, http://roboarchive/wp-content/uploads/2022/02/1-2-300x219.jpg 300w, http://roboarchive/wp-content/uploads/2022/02/1-2-342x250.jpg 342w, http://roboarchive/wp-content/uploads/2022/02/1-2-334x244.jpg 334w, http://roboarchive/wp-content/uploads/2022/02/1-2-425x311.jpg 425w"
+                                                                      sizes="(max-width: 614px) 100vw, 614px"/></figure>
+                    </div>
+                </div>
+
+                <p></p>
+            </div>
         </div>
+    </section>
 
-
-
-        <div class="wp-block-column" style="flex-basis:614px">
-          <p>Главное архивное управление города Москвы осуществляет функции по разработке и реализации государственной
-            политики в сфере архивного дела, осуществляет региональный государственный контроль за соблюдением
-            законодательства об архивном деле.</p>
-
-
-
-          <p>Его основной целью является обеспечение максимальной доступности хранящихся в архивах документов.</p>
+    <section class="section video">
+        <div class="video__wrapper">
+            <picture class="picture">
+                <source
+                        media="(min-width: 600px)"
+                        srcset="./img/video-about-img-descr.jpg, ./img/video-about-img-descr@2x.jpg 1.25"
+                />
+                <img class="video__img" src="./img/video-about-img.jpg" alt="about video">
+            </picture>
+            <div class="video__wrap">
+                <div class="video__circle">
+                    <p>Визуализация</p>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
+    <section class="section advantage">
+        <div class="container">
+            <h2 class="title">Наши преимущества</h2>
+            <div class="swiper advantage__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide advantage__slide">
+                        <div class="advantage__wrapper">
+                            <picture class="picture">
+                                <!--                        <source srcset="http://roboarchive/wp-content/uploads/2022/02/2-1-690x389.jpg"-->
+                                <!--                                media="(min-width: 600px)">-->
 
+                                <!--                        <img src="http://roboarchive/wp-content/uploads/2022/02/rectangle-157-256x182.jpg"-->
+                                <!--                             alt="Максимальная сохранность документов">-->
+                                <source media="(min-width: 600px)"
+                                        srcset="./img/advantage-1-desck.jpg"/>
+                                <img class="advantage__img" src="./img/advantage-1.jpg" alt="advantage 1">
+                            </picture>
 
-      <div class="wp-block-columns">
-        <div class="wp-block-column" style="flex-basis:690px">
-          <figure class="wp-block-image size-full"><img loading="lazy" width="690" height="505"
-              src="http://roboarchive/wp-content/uploads/2022/02/1-1.jpg" alt="" class="wp-image-98"
-              srcset="http://roboarchive/wp-content/uploads/2022/02/1-1.jpg 690w, http://roboarchive/wp-content/uploads/2022/02/1-1-300x220.jpg 300w, http://roboarchive/wp-content/uploads/2022/02/1-1-683x500.jpg 683w, http://roboarchive/wp-content/uploads/2022/02/1-1-342x250.jpg 342w, http://roboarchive/wp-content/uploads/2022/02/1-1-334x244.jpg 334w, http://roboarchive/wp-content/uploads/2022/02/1-1-425x311.jpg 425w"
-              sizes="(max-width: 690px) 100vw, 690px" /></figure>
+                            <div class="advantage__wrap">
+                                <span class="advantage__number">01</span>
+                                <h3 class="advantage__subtitle">Максимальная сохранность документов</h3>
+                            </div>
 
+                        </div>
+                        <div class="wp-content wp-content--gray advantage__content">
+                            <p>Система активной пожарной безопасности, обеспечивающая пониженный уровень содержания
+                                кислорода в
+                                воздухе,
+                                исключающая горение либо иное повреждение документов</p>
+                            <p>Система активной пожарной безопасности, обеспечивающая пониженный уровень содержания
+                                кислорода в
+                                воздухе,
+                                исключающая горение либо иное повреждение документов</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide advantage__slide">
+                        <picture class="picture">
+                            <!--                        <source srcset="http://roboarchive/wp-content/upload s/2022/02/2-1-690x389.jpg"-->
+                            <!--                                media="(min-width: 600px)">-->
+
+                            <!--                        <img src="http://roboarchive/wp-content/uploads/2022/02/rectangle-157-256x182.jpg"-->
+                            <!--                             alt="Максимальная сохранность документов">-->
+                            <source media="(min-width: 600px)"
+                                    srcset="./img/advantage-2-desck.jpg"/>
+                            <img class="advantage__img" src="./img/advantage-2.jpg" alt="advantage 1">
+                        </picture>
+
+                    </div>
+                    <div class="swiper-slide advantage__slide">Slide 3</div>
+                </div>
+                <div class="slider__navigation advantage__navigation">
+                    <div class="arrow__prev">
+                        <svg class="arrow__icon" width="28" height="26">
+                            <use xlink:href="../img/sprite.svg#arrow-prev"></use>
+                        </svg>
+                    </div>
+                    <div class="arrow__next">
+                        <svg class="arrow__icon" width="28" height="26">
+                            <use xlink:href="../img/sprite.svg#arrow-next"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    @@include('blocks/_about-history.html')
+
+    @@include('blocks/_photo.html')
+
+    @@include('blocks/_contact-contact.html')
+</main>
 
 
-
-        <div class="wp-block-column" style="flex-basis:614px">
-          <figure class="wp-block-image size-full"><img loading="lazy" width="614" height="449"
-              src="http://roboarchive/wp-content/uploads/2022/02/1-2.jpg" alt="" class="wp-image-97"
-              srcset="http://roboarchive/wp-content/uploads/2022/02/1-2.jpg 614w, http://roboarchive/wp-content/uploads/2022/02/1-2-300x219.jpg 300w, http://roboarchive/wp-content/uploads/2022/02/1-2-342x250.jpg 342w, http://roboarchive/wp-content/uploads/2022/02/1-2-334x244.jpg 334w, http://roboarchive/wp-content/uploads/2022/02/1-2-425x311.jpg 425w"
-              sizes="(max-width: 614px) 100vw, 614px" /></figure>
-        </div>
-      </div>
-
-
-
-      <p></p>
-    </div>
-  </div>
-
-
-
-  <section class="">
-    <div class="container">
-      <h2 class="title">Наши преимущества</h2>
-
-      <div class="">
-        <div class="">
-          <picture class="">
-            <source srcset="http://roboarchive/wp-content/uploads/2022/02/2-1-690x389.jpg" media="(min-width: 600px)">
-
-            <img src="http://roboarchive/wp-content/uploads/2022/02/rectangle-157-256x182.jpg"
-              alt="Максимальная сохранность документов">
-          </picture>
-        </div>
-
-        <h3 class="">Максимальная сохранность документов</h3>
-
-        <div class="wp-content wp-content--gray">
-          <p>Система активной пожарной безопасности, обеспечивающая пониженный уровень содержания кислорода в воздухе,
-            исключающая горение либо иное повреждение документов</p>
-          <p>Система активной пожарной безопасности, обеспечивающая пониженный уровень содержания кислорода в воздухе,
-            исключающая горение либо иное повреждение документов</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
+@@include('blocks/_footer.html')
+<script src="js/script.min.js"></script>
 </body>
 
 </html>

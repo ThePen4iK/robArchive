@@ -1,0 +1,135 @@
+.services {
+
+  &__wrapper {
+
+  }
+
+  &__list {
+    list-style: none;
+
+
+
+
+  }
+
+  &__item {
+    padding: 40px 0;
+    border-bottom: 1px solid #C4C4C4;
+    &:first-child {
+      border-top: 1px solid #c4c4c4;
+    }
+    @media(min-width: 768px) {
+      padding: 50px 0;
+      display: flex;
+      align-items: flex-start;
+    }
+    @media(min-width: 1440px){
+      justify-content: space-between;
+    }
+  }
+
+  &__number {
+    display: block;
+    font-family: "Druk Wide Cyr", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0F3A4C;
+
+    margin-bottom: 30px;
+  }
+
+  &__wrap {
+    width: 100%;
+    max-width: 677px;
+    @media(min-width: 768px) {
+      margin-left: 15px;
+    }
+    @media(min-width: 992px) {
+      margin-left: 35px;
+    }
+    @media(min-width: 1024px) {
+      margin-left: 50px;
+    }
+    @media(min-width: 1440px) {
+      margin-left: auto;
+    }
+  }
+
+  &__title {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0F3A4C;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 30px;
+
+    width: 100%;
+    max-width: 602px;
+
+  }
+
+  &__link {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #0F3A4C;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid rgba(15, 58, 76, 0.2);
+    padding-bottom: 9px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+    max-width: fit-content;
+    transition: all 0.5s ease-in-out;
+
+    @media(any-hover: hover) {
+      &:hover {
+        transition: all 0.5s ease-in-out;
+        color: #517FAD;
+        border-color: rgba(81, 127, 173, 0.2);
+
+        & > .card__icon {
+          transition: all 0.5s ease-in-out;
+          color: #517FAD;
+        }
+      }
+    }
+  }
+
+  &__img {
+    margin-top: 40px;
+    @media(min-width: 768px) {
+      margin-top: 0;
+      margin-left: 33px;
+    }
+  }
+}

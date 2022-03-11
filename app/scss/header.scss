@@ -9,6 +9,10 @@
 
   z-index: 10;
   transition: all 0.5s ease-in-out;
+  &--mod{
+    border-bottom: 1px solid #9c9c9c;
+    background: #FFFFFF;
+  }
 
   & > .container {
     display: flex;
@@ -17,6 +21,8 @@
   }
 
   &__fixed {
+    padding-top: 10px;
+    padding-bottom: 5px;
     background: #FFFFFF;
 
     .logo-icon {
@@ -39,9 +45,10 @@
       }
     }
 
-    .btn {
+    .btn--header {
       background: #0f3a4c;
       color: #FFFFFF;
+
     }
   }
 
@@ -76,7 +83,9 @@
   }
 
   &__navigation {
+    margin-bottom: 15px;
     @media(min-width: 1024px) {
+      margin-bottom: 0;
       margin-left: auto;
       margin-right: 60px;
     }
@@ -140,48 +149,23 @@
       color: #FFFFFF;
     }
   }
+  &--mod{
+    &>a{
+      color: #081F28;
+    }
+  }
 }
 
 .logo {
   &-icon {
     color: #FFFFFF;
-
+  &--mod{
+    color: #081F28;
+  }
   }
 }
 
-.btn {
-  font-family: "Druk Wide Cyr", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 19px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #FFFFFF;
 
-  background: #0F3A4C;
-  border-radius: 50px;
-  padding: 12px 27px 13px 28px;
-  transition: 0.5s ease-in-out;
-
-  cursor: pointer;
-  border: 0;
-  @media (any-hover: hover) {
-    &:hover {
-      background: #517FAD;
-      transition: 0.5s ease-in-out;
-    }
-  }
-  @media(min-width: 576px) {
-    width: 100%;
-    max-width: max-content;
-    margin: 0 auto;
-  }
-  @media(min-width: 1024px) {
-    background: #FFFFFF;
-    color: #0F3A4C;
-  }
-}
 
 .hamburger {
   width: 36px;
@@ -223,9 +207,14 @@
       width: 19px;
       height: 1px;
       transition: transform 500ms;
+      &--mod{
+        background-color: #FFFFFF;
+      }
     }
   }
-
+  &--mod{
+    background: #0F3A4C;
+  }
 }
 
 .hamburger--active {
