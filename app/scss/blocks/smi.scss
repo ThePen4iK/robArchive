@@ -1,0 +1,22 @@
+.smi{
+  background: rgba(15,58,76, 0.05);
+  &--last{
+    background: none;
+    padding-top: 0;
+  }
+  &__title{
+    margin-bottom: 0;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    @media(min-width: 768px){
+      margin-bottom: 70px;
+    }
+  }
+}
+.swiper-common{
+  overflow: hidden;
+}

@@ -1,0 +1,23 @@
+.faq{
+
+  &__list{
+    list-style: none;
+    overflow-wrap: unset;
+  }
+  &__item{
+    border-top: 1px solid #9c9c9c;
+
+    &:last-child{
+      border-bottom: 1px solid #9c9c9c;
+    }
+
+    &--vacancies{
+      border: none;
+      margin-bottom: 15px;
+      &:last-child{
+        border: none;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

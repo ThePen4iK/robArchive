@@ -4,87 +4,164 @@
 
 <body>
 @@include('blocks/_header.html')
-<h1 class="title">Новости</h1>
+<main class="main-section">
+    @@include('blocks/_start-news.html')
 
-<!-- Классы можно любые везде добавлять кроме wp-content. wp-content - не менять.
-  Его можно во что-то обернуть, чтобы ширину задать, но в стили самого wp-content не лезть другими классами или вложенностью
-   -->
-<div class="container">
-  <div class="wp-content wp-content--news">
+    <!-- Классы можно любые везде добавлять кроме wp-content. wp-content - не менять.
+    Его можно во что-то обернуть, чтобы ширину задать, но в стили самого wp-content не лезть другими классами или вложенностью
+     -->
+    <section class="section info">
+        <div class="container">
+            <div class="wp-content wp-content--news">
 
-    <div class="wp-block-columns">
-      <div class="wp-block-column" style="flex-basis:665px">
-        <h2 id="главное-архивное-управление-города-москвы">Главное архивное управление города Москвы</h2>
-
-
-
-        <p>Главное архивное управление города Москвы осуществляет функции по разработке и реализации государственной
-          политики в сфере архивного дела, осуществляет региональный государственный контроль за соблюдением
-          законодательства об архивном деле.<br>Его основной целью является обеспечение максимальной доступности
-          хранящихся в архивах документов, организация использования документов в интересах граждан и общества,
-          популяризация исторического прошлого</p>
-
-
-
-        <p>В сферу деятельности Главархива Москвы входят задачи по сбережению исторической памяти жителей столицы,
-          обеспечению возможности написания достоверной истории, противодействию попыткам фальсификации и искажения
-          исторической правды.</p>
-
-
-
-        <blockquote class="wp-block-quote">
-          <p>«Сейчас архивные документы московских организаций хранятся в&nbsp;пяти специализированных
-            и&nbsp;42&nbsp;приспособленных для&nbsp;этих целей зданиях и&nbsp;помещениях»</p>
-        </blockquote>
-
-
-
-        <p>Сегодня архивное дело выходит на новый виток развития. Профессия архивиста трансформируется в соответствии
-          с требованием времени и переходит на принципиально новый цифровой уровень. И создание роботизированного
-          архивного комплекса города Москвы – это настоящий прорыв в области хранения документов.</p>
-      </div>
-
-
-
-      <div class="wp-block-column" style="flex-basis:690px">
-        <figure class="wp-block-image size-full"><img loading="lazy" width="690" height="778"
-                                                      src="http://roboarchive/wp-content/uploads/2022/02/0-1.jpg" alt="" class="wp-image-116"
-                                                      srcset="http://roboarchive/wp-content/uploads/2022/02/0-1.jpg 690w, http://roboarchive/wp-content/uploads/2022/02/0-1-266x300.jpg 266w, http://roboarchive/wp-content/uploads/2022/02/0-1-549x619.jpg 549w, http://roboarchive/wp-content/uploads/2022/02/0-1-443x500.jpg 443w, http://roboarchive/wp-content/uploads/2022/02/0-1-517x583.jpg 517w, http://roboarchive/wp-content/uploads/2022/02/0-1-222x250.jpg 222w, http://roboarchive/wp-content/uploads/2022/02/0-1-249x281.jpg 249w, http://roboarchive/wp-content/uploads/2022/02/0-1-276x311.jpg 276w, http://roboarchive/wp-content/uploads/2022/02/0-1-315x355.jpg 315w"
-                                                      sizes="(max-width: 690px) 100vw, 690px" /></figure>
-      </div>
-    </div>
+                <div class="wp-block-columns">
+                    <div class="wp-block-column" style="flex-basis:665px">
+                        <h2 id="главное-архивное-управление-города-москвы">Главное архивное управление города
+                            Москвы</h2>
+                        <p>Главное архивное управление города Москвы осуществляет функции по разработке и реализации
+                            государственной
+                            политики в сфере архивного дела, осуществляет региональный государственный контроль за
+                            соблюдением
+                            законодательства об архивном деле.<br>Его основной целью является обеспечение максимальной
+                            доступности
+                            хранящихся в архивах документов, организация использования документов в интересах граждан и
+                            общества,
+                            популяризация исторического прошлого</p>
+                        <p>В сферу деятельности Главархива Москвы входят задачи по сбережению исторической памяти
+                            жителей столицы,
+                            обеспечению возможности написания достоверной истории, противодействию попыткам
+                            фальсификации и искажения
+                            исторической правды.</p>
+                        <blockquote class="wp-block-quote">
+                            <p>«Сейчас архивные документы московских организаций хранятся в&nbsp;пяти специализированных
+                                и&nbsp;42&nbsp;приспособленных для&nbsp;этих целей зданиях и&nbsp;помещениях»</p>
+                        </blockquote>
+                        <p>Сегодня архивное дело выходит на новый виток развития. Профессия архивиста трансформируется в
+                            соответствии
+                            с требованием времени и переходит на принципиально новый цифровой уровень. И создание
+                            роботизированного
+                            архивного комплекса города Москвы – это настоящий прорыв в области хранения документов.</p>
+                    </div>
+                    <div class="wp-block-column" style="flex-basis:690px">
+                        <figure class="wp-block-image size-full"><img loading="lazy" width="690" height="778"
+                                                                      src="http://roboarchive/wp-content/uploads/2022/02/0-1.jpg"
+                                                                      alt="" class="wp-image-116"
+                                                                      srcset="http://roboarchive/wp-content/uploads/2022/02/0-1.jpg 690w,    http://roboarchive/wp-content/uploads/2022/02/0-1-266x300.jpg 266w, http://roboarchive/wp-content/uploads/2022/02/0-1-549x619.jpg 549w, http://roboarchive/wp-content/uploads/2022/02/0-1-443x500.jpg 443w, http://roboarchive/wp-content/uploads/2022/02/0-1-517x583.jpg 517w, http://roboarchive/wp-content/uploads/2022/02/0-1-222x250.jpg 222w, http://roboarchive/wp-content/uploads/2022/02/0-1-249x281.jpg 249w, http://roboarchive/wp-content/uploads/2022/02/0-1-276x311.jpg 276w, http://roboarchive/wp-content/uploads/2022/02/0-1-315x355.jpg 315w"
+                                                                      sizes="(max-width: 690px) 100vw, 690px"/></figure>
+                    </div>
+                </div>
 
 
+                <p></p>
+            </div>
+        </div>
 
-    <p></p>
-  </div>
-</div>
+        <div class="container info__container">
+            <div class="swiper info__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide info__slide">
+                        <picture class="picture">
+                            <source
+                                    media="(min-width: 600px)"
+                                    srcset="../img/info-1-desck.jpg, ../img/info-1-desck@2x.jpg 1.25x"
+                            />
+                            <img class="common__img" src="./img/info-1.jpg" alt="info 1">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide info__slide">
+                        <picture class="picture">
+                            <source
+                                    media="(min-width: 600px)"
+                                    srcset="../img/info-2-desck.jpg, ../img/info-2-desck@2x.jpg 1.25x"
+                            />
+                            <img class="common__img" src="./img/info-2.jpg" alt="info 1">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide info__slide">
+                        <picture class="picture">
+                            <source
+                                    media="(min-width: 600px)"
+                                    srcset="../img/info-3-desck.jpg, ../img/info-3-desck@2x.jpg 1.25x"
+                            />
+                            <img class="common__img" src="./img/info-3.jpg" alt="smi 1">
+                        </picture>
+                    </div>
+                </div>
+                <div class="slider__navigation slider__navigation--info">
+                    <div class="arrow__prev">
+                        <svg class="arrow__icon" width="28" height="26">
+                            <use xlink:href="../img/sprite.svg#arrow-prev"></use>
+                        </svg>
+                    </div>
+                    <div class="arrow__next">
+                        <svg class="arrow__icon" width="28" height="26">
+                            <use xlink:href="../img/sprite.svg#arrow-next"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<div class="container">
+        <div class="container">
+            <div class="wp-content info__content">
+                <div class="info__decor">
+                    <p>
+                        Первый в России онлайн-музей, который практически полностью собран из документов и предметов,
+                        переданных горожанами в рамках одноименной акции.
+                    </p>
+                </div>
+                <div class="info__wrap">
+                    <p>Первый в России онлайн-музей, который практически полностью собран из документов и предметов,
+                        переданных
+                        горожанами в рамках одноименной акции. Главный архив проводит такие мероприятия:</p>
+                </div>
+                <ol>
+                    <li>Выставочный зал</li>
+                    <li>Выставки под открытым небом</li>
+                    <li>Виртуальные выставки</li>
+                    <li>Читальные залы</li>
+                    <li>Экскурсии</li>
+                </ol>
+                <h2>Публикационная деятельность</h2>
+                <p>Главархив Москвы определяет приоритетные направления публикационной деятельности, перспективы и пути
+                    ее
+                    совершенствования, рассматривает концепции и проекты изданий. В Главном архиве хранятся:</p>
+                <ul>
+                    <li>Книги</li>
+                    <li>Журналы</li>
+                    <li>Документация</li>
+                    <li>Фотографии</li>
+                    <li>Видеоматериалы</li>
+                </ul>
+            </div>
 
-  <h2 class="title">Секция под галереей</h2>
-  <div class="wp-content">
-    <p>Первый в России онлайн-музей, который практически полностью собран из документов и предметов, переданных
-      горожанами в рамках одноименной акции. Главный архив проводит такие мероприятия:</p>
-    <ol>
-      <li>Выставочный зал</li>
-      <li>Выставки под открытым небом</li>
-      <li>Виртуальные выставки</li>
-      <li>Читальные залы</li>
-      <li>Экскурсии</li>
-    </ol>
-    <h2>Публикационная деятельность</h2>
-    <p>Главархив Москвы определяет приоритетные направления публикационной деятельности, перспективы и пути ее
-      совершенствования, рассматривает концепции и проекты изданий. В Главном архиве хранятся:</p>
-    <ul>
-      <li>Книги</li>
-      <li>Журналы</li>
-      <li>Документация</li>
-      <li>Фотографии</li>
-      <li>Видеоматериалы</li>
-    </ul>
-  </div>
-</div>
+            <div class="info__share">
+                <p>Поделиться:</p>
+                <ul class="social social--info">
+                    <li class="social__item">
+                        <svg class="social__icon social__icon--night">
+                            <use xlink:href="../img/sprite.svg#instagram"></use>
+                        </svg>
+                    </li>
+                    <li class="social__item">
+                        <svg class="social__icon social__icon--night">
+                            <use xlink:href="../img/sprite.svg#twitter"></use>
+                        </svg>
+                    </li>
+                    <li class="social__item ">
+                        <svg class="social__icon social__icon--night">
+                            <use xlink:href="../img/sprite.svg#facebook"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+        @@include('blocks/_smi-last.html')
+</main>
+
+@@include('blocks/_footer.html')
+<script src="js/script.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Contact</title>
+</head>
+
+<body>
+<header class="header header--mod">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <svg class="logo-icon logo-icon--mod" width="101" height="52">
+                <use xlink:href="./img/sprite.svg#logo"></use>
+            </svg>
+        </a>
+        <div class="header__wrapper">
+            <nav class="header__navigation ">
+                <ul id="menu-menyu-v-shapke-sajta" class="header__list">
+                    <li class="menu-item menu-item--mod">
+                        <a href="/">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="menu-item menu-item--mod">
+                        <a href="/about.html">
+                            О компании
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item--mod"><a href="/app/news.html">Новости</a></li>
+                    <li class="menu-item menu-item--mod"><a href="/vacancies.html" aria-current="page">Вакансии</a></li>
+                    <li class="menu-item menu-item--mod"><a href="/prices.html">Цены</a></li>
+                </ul>
+            </nav>
+            <button class="btn btn--header btn--header--mod">Связаться</button>
+        </div>
+        <button class="hamburger hamburger--mod">
+            <div class="hamburger-menu">
+                <span class="hamburger-line hamburger-line--mod"></span>
+                <span class="hamburger-line hamburger-line--mod"></span>
+            </div>
+        </button>
+    </div>
+</header>
+<main class="main-section">
+    <section class="section address">
+    <div class="container">
+        <h1 class="address__title title">Контакты</h1>
+        <address class="address__content">
+            <ul class="address__list">
+                <li class="address__item">
+                    <h4>Адрес</h4>
+                    <p>г. Москва, <br>
+                        ТиНАО, д. Сахарово</p>
+                </li>
+                <li class="address__item">
+                    <h4>Телефон</h4>
+                    <p>+7 777 777 77 </p>
+                </li>
+                <li class="address__item">
+                    <h4>Почта</h4>
+                    <p>archiv@gmail.com</p>
+                </li>
+            </ul>
+        </address>
+        <iframe class="address__map"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+        </iframe>
+    </div>
+</section>
+    <section class="contact section contact--vacancies">
+    <div class="container contact__container--vacancies">
+        <div class="contact__wrapper contact__wrapper--contact">
+            <h2 class="contact__title contact__title--vacancies title">Связаться с нами </h2>
+            <p class="contact__text text contact__text--contact">Заполните форму, и наш специалист с вами свяжется</p>
+        </div>
+        <form action="#" class="form form--vacancies">
+            <div class="form__wrap">
+                <label for="email"></label>
+                <input class="form__input" type="email" id="email" placeholder="Ваша электронная почта">
+            </div>
+            <div class="form__wrap">
+                <textarea class="form__textarea" name="textarea" id="textarea"
+                          placeholder="Введите Ваше сообщение"></textarea>
+            </div>
+            <div class="form__wrap">
+                <label for="checkbox" class="form__checkbox">
+                    <input type="checkbox" class="form__checkbox-input " id="checkbox">
+                    <p class="form__text">Я соглашаюсь с <a href="#" class="form__link">Политикой конфиденциальности</a>
+                    </p>
+                </label>
+            </div>
+
+            <button class="btn btn--common form__btn form__btn--mod ">Связаться</button>
+        </form>
+    </div>
+</section>
+</main>
+<footer class="footer">
+    <div class="footer__top">
+        <div class="container footer__container">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" width="101" height="52">
+                    <use xlink:href="./img/sprite.svg#logo"></use>
+                </svg>
+            </a>
+            <nav class="footer__navigation">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">О компании</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Услуги</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Цены</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Вакансии</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="footer__bottom">
+        <div class="container footer__container--mod">
+            <ul class="social">
+                <li class="social__item">
+                    <svg class="social__icon social__icon--light">
+                        <use xlink:href="../img/sprite.svg#instagram"></use>
+                    </svg>
+                </li>
+                <li class="social__item">
+                    <svg class="social__icon social__icon--light">
+                        <use xlink:href="../img/sprite.svg#twitter"></use>
+                    </svg>
+                </li>
+                <li class="social__item ">
+                    <svg class="social__icon social__icon--light">
+                        <use xlink:href="../img/sprite.svg#facebook"></use>
+                    </svg>
+                </li>
+            </ul>
+            <a href="#" class="footer__policy">Политика конфиденциальности</a>
+
+        </div>
+    </div>
+
+
+    <div class="overlay js-overlay-modal"></div>
+    <div class="popup">
+        <div class="popup__container">
+            <svg class="popup__close" width="19" height="19">
+                <use xlink:href="../img/sprite.svg#popup-close"></use>
+            </svg>
+            <h1 class="popup__title title">Свяжитесь с нами</h1>
+            <p class="popup__text text">Не нашли ответ на ваш вопрос? <br>
+                Заполните форму, и наш специалист с вами свяжется.</p>
+
+            <form action="#" class="form form-popup">
+                <div class="form__wrap form__wrap-popup">
+                    <label for="email"></label>
+                    <input class="form__input form__input-popup" type="email" id="email"
+                           placeholder="Ваша электронная почта">
+                </div>
+                <div class="form__wrap form__wrap-popup form__wrap-popup--mod">
+                <textarea class="form__textarea form__textarea-popup" name="textarea" id="textarea"
+                          placeholder="Введите Ваше сообщение"></textarea>
+                </div>
+
+                <button class="btn form__btn btn--common form__btn-popup ">Связаться</button>
+
+                <div class="form__wrap form__wrap-popup">
+                    <label for="checkbox" class="form__checkbox ">
+                        <input type="checkbox" class="form__checkbox-input " id="checkbox">
+                        <p class="form__text  form__text-popup">Я соглашаюсь с <a href="#" class="form__link">Политикой
+                            конфиденциальности</a>
+                        </p>
+                    </label>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="popup__container popup__container--mod">
+            <svg class="popup__close" width="19" height="19">
+                <use xlink:href="../img/sprite.svg#popup-close"></use>
+            </svg>
+            <h1 class="popup__title popup__title--gratitude title">Спасибо за обращение!</h1>
+            <p class="popup__text popup__text--gratitude text">Ваше обращение принято <br> и обрабатывается. <br>
+                Скоро наш специалист <br> свяжется с вами!</p>
+            <button class="btn form__btn btn--common">Хорошо</button>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="popup__container popup__container--privacy">
+            <svg class="popup__close" width="19" height="19">
+                <use xlink:href="../img/sprite.svg#popup-close"></use>
+            </svg>
+            <h2 class="popup__info">Политика в отношении обработки персональных данных</h2>
+            <!-- Контентная часть для попапа Политики -->
+            <div class="wp-content wp-content--small wp-content--privacy">
+                <strong>1. Общие положения</strong>
+                <br>
+                Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального
+                закона от
+                27.07.2006. №152-ФЗ «О персональных данных» (далее - Закон о персональных данных) и определяет порядок
+                обработки
+                персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые Михайловым
+                Иваном
+                Сергеевичем (далее – Оператор).
+                <br>
+                1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и
+                свобод
+                человека и гражданина при обработке его персональных данных, в том числе защиты прав на
+                неприкосновенность
+                частной
+                жизни, личную и семейную тайну.
+                <br>
+                1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика)
+                применяется ко
+                всей
+                информации.
+
+
+                <strong>1. Общие положения</strong>
+                <br>
+                Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального
+                закона от
+                27.07.2006. №152-ФЗ «О персональных данных» (далее - Закон о персональных данных) и определяет порядок
+                обработки
+                персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые Михайловым
+                Иваном
+                Сергеевичем (далее – Оператор).
+                <br>
+                1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и
+                свобод
+                человека и гражданина при обработке его персональных данных, в том числе защиты прав на
+                неприкосновенность
+                частной
+                жизни, личную и семейную тайну.
+                <br>
+                1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика)
+                применяется ко
+                всей
+                информации.
+
+
+            </div>
+        </div>
+    </div>
+    <div class="popup popup--video">
+        <div class="popup__container popup__container--video">
+            <svg class="popup__close popup__close--video" width="19" height="19">
+                <use xlink:href="../img/sprite.svg#popup-close"></use>
+            </svg>
+            <iframe class="popup__video" src="https://www.youtube.com/embed/u0F2lPQkD8g"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+</footer>
+<script src="js/script.min.js"></script>
+</body>
+</html>

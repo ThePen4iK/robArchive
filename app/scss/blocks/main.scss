@@ -49,6 +49,11 @@
     color: #FFFFFF;
     margin-top: 0;
     margin-bottom: 20px;
+    word-break: break-word;
+    @media(min-width: 768px){
+      font-size: 48px;
+      line-height: 58px;
+    }
   }
   &__subtitle{
     width: 100%;
