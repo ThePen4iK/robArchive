@@ -154,12 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     })
 
-    const swiperAboutHistory = new Swiper(".story__swiper", {
-        navigation: {
-            nextEl: ".arrow__next--story",
-            prevEl: ".arrow__prev--story",
-        },
-    })
+
 
     const swiperStoryTimeline = new Swiper(".story__timeline-swiper",{
         spaceBetween: 34,
@@ -170,6 +165,31 @@ document.addEventListener("DOMContentLoaded", function () {
             nextEl: ".arrow__next--story",
             prevEl: ".arrow__prev--story",
         },
+        freeMode: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+            768: {
+                spaceBetween: 38,
+            },
+            1200:{
+                direction: "vertical",
+                spaceBetween: 148,
+            }
+        }
     })
+
+    const swiperAboutHistory = new Swiper(".story__swiper", {
+        slidesPerView: 1,
+        spaceBetween: 34,
+        loop: true,
+        thumbs: {
+            swiper: swiperStoryTimeline,
+        },
+        navigation: {
+            nextEl: ".arrow__next--story",
+            prevEl: ".arrow__prev--story",
+        },
+    })
+
     console.log("DOM fully loaded and parsed");
 })

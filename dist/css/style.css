@@ -3324,27 +3324,92 @@ img {
   }
 }
 
+.story__wrapper {
+  overflow: hidden;
+}
+@media (min-width: 1200px) {
+  .story__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.story__navigation {
+  display: none;
+}
+@media (min-width: 767px) {
+  .story__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1199px) {
+  .story__navigation {
+    margin-top: auto;
+    margin-bottom: 0;
+    margin-left: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .story__navigation > .arrow__prev--story {
+    margin-bottom: 28px;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .story__navigation > .arrow__next--story {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+@media (min-width: 1439px) {
+  .story__navigation {
+    margin-left: 225px;
+  }
+}
 .story__timeline {
   position: relative;
-  margin-bottom: 300px;
+  margin-bottom: 225px;
+}
+@media (min-width: 768px) {
+  .story__timeline {
+    margin-bottom: 200px;
+  }
+}
+@media (min-width: 1199px) {
+  .story__timeline {
+    margin-bottom: 0;
+  }
 }
 .story__timeline:before {
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
   left: 0;
-  bottom: 0;
   width: 100%;
   height: 2px;
   background: -webkit-gradient(linear, right top, left top, color-stop(-0.66%, rgba(187, 203, 219, 0)), color-stop(50.93%, #BBCBDB), to(rgba(187, 203, 219, 0)));
   background: -o-linear-gradient(right, rgba(187, 203, 219, 0) -0.66%, #BBCBDB 50.93%, rgba(187, 203, 219, 0) 100%);
   background: linear-gradient(270deg, rgba(187, 203, 219, 0) -0.66%, #BBCBDB 50.93%, rgba(187, 203, 219, 0) 100%);
 }
+@media (min-width: 1199px) {
+  .story__timeline:before {
+    width: 2px;
+    height: 683px;
+  }
+}
 .story__timeline:after {
   content: "";
   position: absolute;
-  top: calc(100% + 15px);
+  top: 100%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -3353,30 +3418,41 @@ img {
   height: 40px;
   background: #0F3A4C;
 }
-.story__swiper {
-  overflow: hidden;
-}
-.story__slide {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 348px;
-          flex: 0 0 348px;
-}
-@media (min-width: 768px) {
-  .story__slide {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 709px;
-            flex: 0 0 709px;
+@media (min-width: 1199px) {
+  .story__timeline:after {
+    top: 50%;
+    left: 55%;
+    height: 80px;
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+        -ms-transform: translate(-50%, -50%) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg);
   }
 }
-.story__slide-timeline {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 62px;
-          flex: 0 0 62px;
+@media (min-width: 1440px) {
+  .story__timeline:after {
+    left: 19%;
+  }
 }
-.story__slide-timeline:before {
+.story__timeline-swiper {
+  padding-top: 15px;
+  position: relative;
+}
+@media (min-width: 1199px) {
+  .story__timeline-swiper {
+    padding-top: 0;
+    padding-left: 30px;
+    height: 683px;
+  }
+}
+@media (min-width: 1439px) {
+  .story__timeline-swiper {
+    padding-left: 112px;
+  }
+}
+.story__timeline-swiper:before {
   content: "";
   position: absolute;
-  top: calc(100% + 145px);
+  top: calc(100% + 105px);
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -3385,20 +3461,94 @@ img {
   height: 141px;
   border: 1px solid #0F3A4C;
   border-radius: 50%;
-  opacity: 0;
 }
-.story__slide-timeline.swiper-slide-active:before {
-  opacity: 1;
+@media (min-width: 1199px) {
+  .story__timeline-swiper:before {
+    top: 50%;
+    left: calc(100% + 145px);
+    width: 221px;
+    height: 221px;
+  }
+}
+@media (min-width: 1440px) {
+  .story__timeline-swiper:before {
+    left: calc(100% + 25px);
+  }
+}
+.story__swiper {
+  overflow: hidden;
+}
+@media (min-width: 1199px) {
+  .story__swiper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 65%;
+            flex: 0 0 65%;
+    width: 100%;
+    margin-left: auto;
+  }
+}
+@media (min-width: 1199px) {
+  .story__slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+.story__slide-timeline {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 62px;
+          flex: 0 0 62px;
 }
 .story__slide-timeline.swiper-slide-active > .story__date {
   font-size: 24px;
   line-height: 29px;
   position: absolute;
-  top: calc(100% + 145px);
+  top: calc(100% + 125px);
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  color: #0F3A4C;
+}
+@media (min-width: 1199px) {
+  .story__slide-timeline.swiper-slide-active > .story__date {
+    font-size: 48px;
+    line-height: 58px;
+    top: 50%;
+    left: calc(100% + 145px);
+  }
+}
+@media (min-width: 1440px) {
+  .story__slide-timeline.swiper-slide-active > .story__date {
+    left: calc(100% + 25px);
+  }
+}
+.story__slide-timeline.swiper-slide-prev > .story__date {
+  color: #9C9C9C;
+}
+@media (min-width: 1199px) {
+  .story__slide-timeline.swiper-slide-prev > .story__date {
+    color: #BDBDBD;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+.story__slide-timeline.swiper-slide-next > .story__date {
+  color: #9C9C9C;
+}
+@media (min-width: 1199px) {
+  .story__slide-timeline.swiper-slide-next > .story__date {
+    color: #BDBDBD;
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 .story__date {
   font-family: "Druk Wide Cyr", sans-serif;
@@ -3408,8 +3558,14 @@ img {
   line-height: 22px;
   letter-spacing: 0em;
   text-align: center;
-  color: #9C9C9C;
+  color: #DADADA;
   position: relative;
+}
+@media (min-width: 1199px) {
+  .story__date {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 .story__text {
   font-family: "Inter", sans-serif;
