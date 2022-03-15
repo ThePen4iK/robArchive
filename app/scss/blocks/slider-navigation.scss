@@ -13,6 +13,13 @@
   margin-right: 20px;
   cursor: pointer;
 
+
+  &--story{
+    @media(min-width: 1439px){
+      margin-right: 0;
+    }
+  }
+
 }
 .arrow__next{
   cursor: pointer;

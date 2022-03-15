@@ -137,20 +137,50 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     })
 
-    const swiperPhoto = new Swiper(".photo__swiper", {
+
+
+        const swiperPhoto = new Swiper(".photo__swiper", {
+            slidesPerView: "auto",
+            spaceBetween: 16,
+            loop: true,
+            navigation: {
+                nextEl: ".arrow__next--photo",
+                prevEl: ".arrow__prev--photo",
+            },
+            breakpoints: {
+                768: {
+                    spaceBetween: 20,
+                }
+            },
+        })
+    
+
+
+    const swiperService = new Swiper(".service__swiper", {
         slidesPerView: "auto",
-        spaceBetween: 16,
-        loop: true,
+        spaceBetween: 15,
         navigation: {
-            nextEl: ".arrow__next--photo",
-            prevEl: ".arrow__prev--photo",
+            nextEl: ".arrow__next--service",
+            prevEl: ".arrow__prev--service",
         },
         breakpoints: {
-            768: {
-                spaceBetween: 20,
+            1439: {
+                spaceBetween: 0,
+            }
+        },
+        on:{
+            resize(){
+                if (window.innerWidth <= 1439) {
+                    this.enable();
+                } else if (window.innerWidth > 1439) {
+
+                    this.slideTo(0);
+                    this.disable();
+                }
             }
         }
     })
+
 
     const swiperAdvantage = new Swiper(".advantage__swiper", {
         slidesPerView: "auto",
@@ -204,6 +234,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const swiperStoryTimeline = new Swiper(".story__timeline-swiper",{
         spaceBetween: 34,
+        allowTouchMove: false,
         slidesPerView: 'auto',
         centeredSlides: true,
         loop: true,

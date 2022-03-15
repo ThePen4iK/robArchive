@@ -1,4 +1,4 @@
-.btn{
+.btn {
   border: none;
   outline: none;
   transition: all 0.5s ease-in-out;
@@ -12,7 +12,8 @@
   text-align: center;
 
   cursor: pointer;
-  &--header{
+
+  &--header {
     color: #FFFFFF;
     background: #0F3A4C;
     border-radius: 50px;
@@ -33,30 +34,52 @@
       background: #FFFFFF;
       color: #0F3A4C;
     }
-    &--mod{
+
+    &--mod {
       background: #0F3A4C;
-      color: #FFFFFF  ;
+      color: #FFFFFF;
     }
   }
 
-  &--common{
+  &--service {
+    background: #0F3A4C;
+    padding: 19px 108px;
+    color: #FFFFFF;
+
+    @media(max-width: 374px){
+      padding: 19px 80px;
+    }
+    @media(min-width: 768px) {
+      display: none;
+    }
+
+    &-mod {
+      display: none;
+      @media(min-width: 768px) {
+        display: block;
+
+      }
+    }
+  }
+
+  &--common {
     background: #0F3A4C;
     padding: 15.5px 55px;
     color: #FFFFFF;
 
 
-    @media(any-hover: hover){
-      &:hover{
+    @media(any-hover: hover) {
+      &:hover {
         transition: all 0.5s ease-in-out;
         background: #517FAD;
       }
     }
-    @media(min-width: 320px) and (max-width: 370px){
+    @media(min-width: 320px) and (max-width: 370px) {
       padding: 15.5px 25px;
     }
   }
 
-  &--download{
+  &--download {
     color: #FFFFFF;
 
     padding: 16px 30px;
@@ -66,26 +89,27 @@
     background: #517FAD;
     backdrop-filter: blur(4px);
 
-    @media(min-width: 767px){
+    @media(min-width: 767px) {
       width: 100%;
       max-width: 335px;
 
       padding: 16px 25px;
     }
-    @media(any-hover: hover){
-        &:hover{
+    @media(any-hover: hover) {
+      &:hover {
+        transition: all 0.5s ease-in-out;
+        background: #FFFFFF;
+        color: #0F3A4C;
+
+        & .start__icon {
           transition: all 0.5s ease-in-out;
-          background: #FFFFFF;
           color: #0F3A4C;
-          & .start__icon{
-            transition: all 0.5s ease-in-out;
-            color: #0F3A4C;
-          }
         }
+      }
     }
   }
 
-  &--vacancies{
+  &--vacancies {
     width: 100%;
 
     background: #0F3A4C;
@@ -93,13 +117,13 @@
     padding: 15.5px 25px;
     transition: 0.5s ease-in-out;
 
-    @media(any-hover: hover){
-      &:hover{
+    @media(any-hover: hover) {
+      &:hover {
         background: #517FAD;
         transition: all 0.5s ease-in-out;
       }
     }
-    @media(min-width: 576px){
+    @media(min-width: 576px) {
       max-width: 334px;
     }
   }

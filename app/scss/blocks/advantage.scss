@@ -1,8 +1,9 @@
 .advantage {
-
+  padding-bottom: 0;
 
   &__swiper {
     position: relative;
+    overflow: hidden;
   }
 
   &__slide {
