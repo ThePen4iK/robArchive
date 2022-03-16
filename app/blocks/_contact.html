@@ -7,14 +7,17 @@
             <form action="#" class="form">
                 <div class="form__wrap ">
                     <label for="email"></label>
+                    <span class="input__error">Error text</span>
                     <input class="form__input" type="email" id="email" placeholder="Ваша электронная почта">
                 </div>
                 <div class="form__wrap ">
-                <textarea class="form__textarea" name="textarea" id="textarea"
-                          placeholder="Введите Ваше сообщение"></textarea>
+                    <span class="input__error input__error--textarea">Error text</span>
+                    <textarea class="form__textarea" name="textarea" id="textarea"
+                              placeholder="Введите Ваше сообщение"></textarea>
                 </div>
                 <div class="form__wrap ">
                     <label for="checkbox" class="form__checkbox">
+
                         <input type="checkbox" class="form__checkbox-input " id="checkbox">
                         <p class="form__text">Я соглашаюсь с <a href="#" class="form__link">Политикой
                             конфиденциальности</a>

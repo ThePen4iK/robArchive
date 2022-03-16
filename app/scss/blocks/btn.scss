@@ -45,7 +45,7 @@
     background: #0F3A4C;
     padding: 19px 108px;
     color: #FFFFFF;
-
+    transition: all 0.5s ease-in-out;
     @media(max-width: 374px){
       padding: 19px 80px;
     }
@@ -58,6 +58,12 @@
       @media(min-width: 768px) {
         display: block;
 
+      }
+      @media(any-hover: hover){
+        &:hover{
+          transition: all 0.5s ease-in-out;
+          background: #517FAD;
+        }
       }
     }
   }
