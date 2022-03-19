@@ -1,0 +1,13 @@
+.changed{
+  transition: height 0.5s ease-out;
+  &--mod{
+    margin-bottom: 30px;
+  }
+  &--mod-vacancies{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    @media(min-width: 768px){
+      padding-top: 50px;
+    }
+  }
+}

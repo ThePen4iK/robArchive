@@ -14,7 +14,7 @@
 
 <body>
   <header class="header">
-    <div class="container">
+    <div class="container header__container">
         <a href="index.html" class="logo">
             <svg class="logo-icon" width="101" height="52">
                 <use xlink:href="./img/sprite.svg#logo"></use>
@@ -24,19 +24,19 @@
             <nav class="header__navigation ">
                 <ul id="menu-menyu-v-shapke-sajta" class="header__list">
                     <li class="menu-item">
-                        <a href="/">
+                        <a class="menu-link" href="/">
                             Главная
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="/about.html">
+                        <a class="menu-link" href="/about.html">
                             О компании
                         </a>
                     </li>
 
-                    <li class="menu-item"><a href="/news.html">Новости</a></li>
-                    <li class="menu-item"><a href="/vacancies.html" aria-current="page">Вакансии</a></li>
-                    <li class="menu-item"><a href="/prices.html">Цены</a></li>
+                    <li class="menu-item"><a class="menu-link" href="/news.html">Новости</a></li>
+                    <li class="menu-item"><a class="menu-link" href="/vacancies.html" aria-current="page">Вакансии</a></li>
+                    <li class="menu-item"><a class="menu-link" href="/prices.html">Цены</a></li>
                 </ul>
             </nav>
             <button class="btn btn--header">Связаться</button>
@@ -1555,14 +1555,14 @@
                     </svg>
                 </li>
             </ul>
-            <a href="#" class="footer__policy">Политика конфиденциальности</a>
+            <button class="footer__policy">Политика конфиденциальности</button>
 
         </div>
     </div>
 
 
     <div class="overlay js-overlay-modal"></div>
-    <div class="popup">
+    <div class="popup js-popup-header">
         <div class="popup__container">
             <svg class="popup__close" width="19" height="19">
                 <use xlink:href="../img/sprite.svg#popup-close"></use>
@@ -1597,7 +1597,7 @@
             </form>
         </div>
     </div>
-    <div class="popup">
+    <div class="popup js-popup-thanks">
         <div class="popup__container popup__container--mod">
             <svg class="popup__close" width="19" height="19">
                 <use xlink:href="../img/sprite.svg#popup-close"></use>
@@ -1605,10 +1605,10 @@
             <h1 class="popup__title popup__title--gratitude title">Спасибо за обращение!</h1>
             <p class="popup__text popup__text--gratitude text">Ваше обращение принято <br> и обрабатывается. <br>
                 Скоро наш специалист <br> свяжется с вами!</p>
-            <button class="btn form__btn btn--common">Хорошо</button>
+            <button class="btn btn--common">Хорошо</button>
         </div>
     </div>
-    <div class="popup">
+    <div class="popup js-popup-policy">
         <div class="popup__container popup__container--privacy">
             <svg class="popup__close" width="19" height="19">
                 <use xlink:href="../img/sprite.svg#popup-close"></use>

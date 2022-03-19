@@ -1,0 +1,49 @@
+.common{
+  &__slide{
+    flex: 0 0 309px;
+    @media(min-width: 768px){
+      flex: 0 0 335px;
+    }
+    &--mod{
+      flex: 0 0 335px;
+    }
+  }
+  &__img{
+    margin-bottom: 15px;
+    @media(min-width: 768px){
+      margin-bottom: 20px;
+    }
+  }
+
+  &__subtitle{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9C9C9C;
+    margin-bottom: 5px;
+    @media(min-width: 768px){
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  &__title{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #081F28;
+    width: 100%;
+    max-width: 328px;
+    @media(min-width: 768px){
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}

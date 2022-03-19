@@ -27,22 +27,61 @@ document.addEventListener("DOMContentLoaded", function () {
 
     })
 
-    let btnHeader = document.querySelector(".btn"),
+    let btnHeader = document.querySelector(".btn--header"),
+        btnConnection = document.querySelectorAll(".form__btn"),
+        btnPolicy = document.querySelector(".footer__policy"),
+
         overlay = document.querySelector(".overlay"),
-        popup = document.querySelector(".popup"),
-        popupClose = document.querySelector(".popup__close");
+
+        popupHeader = document.querySelector(".js-popup-header"),
+        popupThanks = document.querySelector(".js-popup-thanks"),
+        popupPolicy = document.querySelector(".js-popup-policy"),
+
+        popupClose = document.querySelectorAll(".popup__close");
 
 
-    btnHeader.addEventListener("click", (e) => {
-        e.preventDefault()
-        popup.classList.add("popup__show");
+    btnHeader.addEventListener("click", ()=>{
+        popupHeader.classList.add("popup__show");
         overlay.classList.add("active-overlay");
         bodyDontScroll.classList.add("body-scroll");
 
-        popupClose.addEventListener("click", () => {
-            popup.classList.remove("popup__show");
-            overlay.classList.remove("active-overlay");
-            bodyDontScroll.classList.remove("body-scroll");
+        popupClose.forEach((item) => {
+            item.addEventListener("click", () => {
+                popupHeader.classList.remove("popup__show");
+                overlay.classList.remove("active-overlay");
+                bodyDontScroll.classList.remove("body-scroll");
+            })
+        })
+    })
+
+    btnConnection.forEach((item, i) => {
+        item.addEventListener("click", (event) => {
+            event.preventDefault();
+            popupThanks.classList.add("popup__show");
+            overlay.classList.add("active-overlay");
+            bodyDontScroll.classList.add("body-scroll");
+
+            popupClose.forEach((item) => {
+                item.addEventListener("click", () => {
+                    popupThanks.classList.remove("popup__show");
+                    overlay.classList.remove("active-overlay");
+                    bodyDontScroll.classList.remove("body-scroll");
+                })
+            })
+        })
+    })
+
+    btnPolicy.addEventListener("click", ()=>{
+        popupPolicy.classList.add("popup__show");
+        overlay.classList.add("active-overlay");
+        bodyDontScroll.classList.add("body-scroll");
+
+        popupClose.forEach((item) => {
+            item.addEventListener("click", () => {
+                popupPolicy.classList.remove("popup__show");
+                overlay.classList.remove("active-overlay");
+                bodyDontScroll.classList.remove("body-scroll");
+            })
         })
     })
 
@@ -50,7 +89,9 @@ document.addEventListener("DOMContentLoaded", function () {
         var key = e.keyCode;
 
         if (key == 27) {
-            popup.classList.remove("popup__show");
+            popupThanks.classList.remove("popup__show");
+            popupHeader.classList.remove("popup__show");
+            popupPolicy.classList.remove("popup__show");
             overlay.classList.remove("active-overlay");
             bodyDontScroll.classList.remove("body-scroll");
 
@@ -60,13 +101,15 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("click", (e) => {
         let target = e.target;
         if (target.classList.contains("active-overlay")) {
-            popup.classList.remove("popup__show");
+            popupThanks.classList.remove("popup__show");
+            popupHeader.classList.remove("popup__show");
+            popupPolicy.classList.remove("popup__show");
             overlay.classList.remove("active-overlay");
             bodyDontScroll.classList.remove("body-scroll");
         }
     })
 
-    const swiperCommon = new Swiper(".swiper-common", {
+    const swiperCommon = new Swiper(".smi__swiper", {
         slidesPerView: "auto",
         loop: true,
         spaceBetween: 20,
@@ -92,22 +135,20 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
 
-
-        const swiperPhoto = new Swiper(".photo__swiper", {
-            slidesPerView: "auto",
-            spaceBetween: 16,
-            loop: true,
-            navigation: {
-                nextEl: ".arrow__next--photo",
-                prevEl: ".arrow__prev--photo",
-            },
-            breakpoints: {
-                768: {
-                    spaceBetween: 20,
-                }
-            },
-        })
-    
+    const swiperPhoto = new Swiper(".photo__swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 16,
+        loop: true,
+        navigation: {
+            nextEl: ".arrow__next--photo",
+            prevEl: ".arrow__prev--photo",
+        },
+        breakpoints: {
+            768: {
+                spaceBetween: 20,
+            }
+        },
+    })
 
 
     const swiperService = new Swiper(".service__swiper", {
@@ -122,8 +163,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 spaceBetween: 0,
             }
         },
-        on:{
-            resize(){
+        on: {
+            resize() {
                 if (window.innerWidth <= 1439) {
                     this.enable();
                 } else if (window.innerWidth > 1439) {
@@ -185,8 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
 
-
-    const swiperStoryTimeline = new Swiper(".story__timeline-swiper",{
+    const swiperStoryTimeline = new Swiper(".story__timeline-swiper", {
         spaceBetween: 34,
         allowTouchMove: false,
         slidesPerView: 'auto',
@@ -202,7 +242,7 @@ document.addEventListener("DOMContentLoaded", function () {
             768: {
                 spaceBetween: 38,
             },
-            1200:{
+            1200: {
                 direction: "vertical",
                 spaceBetween: 148,
             }

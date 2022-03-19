@@ -1,0 +1,70 @@
+.circle__wrapper{
+  position: relative;
+  padding-top: 227px;
+  @media(min-width: 950px){
+    position: absolute;
+    bottom: 0;
+  }
+  .circle{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+.circle{
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 187px;
+  height: 187px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  border: 1px solid #0F3A4C;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  @media (any-hover: hover) {
+    &:hover{
+      background: #0F3A4C;
+      transition: 0.5s ease-in-out;
+      p{
+        color: #FFFFFF;
+
+      }
+    }
+
+  }
+  p{
+    max-width: 116px;
+    width: 100%;
+    font-family: "Druk Wide Cyr", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #0F3A4C;
+  }
+  span{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -12.5px;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    border: 1px solid #9C9C9C;
+    margin-left: -12.5px;
+    &:before{
+      content: "";
+      width: 9px;
+      height: 9px;
+      background: url("../img/play.svg") center / contain no-repeat;
+    }
+  }
+
+}

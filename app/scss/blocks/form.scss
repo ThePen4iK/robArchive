@@ -118,7 +118,7 @@
   &__checkbox {
     display: flex;
     align-items: center;
-    & > .form__checkbox-input {
+    .form__checkbox-input {
       display: none;
 
       &:checked + .form__text {
@@ -194,8 +194,7 @@
   }
 
   &__btn{
-    width: 100%;
-    max-width: 334px;
+
     &-popup{
       width: 100%;
       max-width: 334px;
@@ -210,6 +209,9 @@
     }
     &--mod{
       margin-top: 25px;
+      @media(min-width: 768px){
+        margin-top: 10px;
+      }
     }
   }
 
@@ -229,8 +231,25 @@
   letter-spacing: 0em;
   text-align: left;
 
+  @media(max-width: 575px){
+    right: 0;
+  }
+  @media(min-width: 576px){
+    right: 55px;
+  }
+  @media(min-width: 768px){
+    right: 245px;
+  }
+  @media(min-width: 992px){
+    right: 0;
+  }
+
   &--textarea{
     top: 170px;
+    @media(max-width: 767px){
+      top: 235px;
+    }
+
   }
   &+input{
     outline: 1px solid #E42313;

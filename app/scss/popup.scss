@@ -66,6 +66,9 @@
         color: #517FAD;
       }
     }
+    @media(max-width: 576px){
+      right: 25px;
+    }
     @media(min-width: 768px){
       top: 38px;
       right: 38px;
@@ -80,6 +83,8 @@
   &__title {
     margin-bottom: 15px;
     @media(min-width: 767px) {
+      font-size: 36px;
+      line-height: 43px;
       margin-bottom: 20px;
     }
     &--gratitude{

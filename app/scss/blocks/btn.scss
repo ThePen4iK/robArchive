@@ -72,7 +72,8 @@
     background: #0F3A4C;
     padding: 15.5px 55px;
     color: #FFFFFF;
-
+    width: 100%;
+    max-width: 334px;
 
     @media(any-hover: hover) {
       &:hover {

@@ -1,10 +1,7 @@
 .history{
   overflow: hidden;
-
   &__swiper{
     overflow: hidden;
-
-
   }
 
   &__slide{
@@ -13,8 +10,6 @@
       justify-content: flex-end;
       align-items: flex-end;
     }
-
-
     &-timeline{
       margin-left: 31px;
       margin-top: 31px;
@@ -24,7 +19,7 @@
         margin-left: 80px;
       }
       &.swiper-slide-active{
-        &>.history__date{
+        .history__date{
           top: -120px;
           color: #0F3A4C;
           @media(min-width: 1440px){
@@ -81,6 +76,8 @@
     margin-left: 15px;
     padding-left: 15px;
     border-top: 1px solid #BBCBDB;
+
+
     @media(min-width: 768px){
       margin-left: 0;
     }
@@ -119,6 +116,4 @@
       background: #517FAD;
     }
   }
-
-
 }

@@ -15,17 +15,7 @@
   &__title{
     margin-bottom: 0;
   }
-  &__cover {
 
-  }
-
-  &__navigation {
-    margin-top: 30px;
-    margin-bottom: 40px;
-    @media(min-width: 1440px){
-      display: none;
-    }
-  }
 
 
   &__subtitle {
@@ -147,19 +137,19 @@
         transition: all 0.5s ease-in-out;
         flex: 0 0 502px;
 
-        &>.service__subtitle {
+        .service__subtitle {
           color: #FFFFFF;
         }
-        & > .service__text {
+        .service__text {
           color: #FFFFFF;
         }
-        & > .service__img {
+        .service__img {
           display: block;
         }
-        & > .service__btn {
+        .service__btn {
           display: block;
         }
-        & > .service__arrow{
+        .service__arrow{
           color: #FFFFFF;
           transition: all 0.5s ease-in-out;
           transform: rotate(0deg);
