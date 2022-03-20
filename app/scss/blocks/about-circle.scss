@@ -1,17 +1,18 @@
-.circle__wrapper{
-  position: relative;
-  padding-top: 227px;
-  @media(min-width: 950px){
-    position: absolute;
-    bottom: 0;
-  }
-  .circle{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-}
 .circle{
+  &__wrapper{
+    position: relative;
+    padding-top: 227px;
+    @media(min-width: 950px){
+      position: absolute;
+      bottom: 0;
+    }
+    .circle{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
   position: relative;
   display:flex;
   align-items: center;

@@ -99,7 +99,7 @@
     width: 100%;
     max-width: 435px;
 
-    & > br {
+    & br {
       display: none;
       @media(min-width: 767px) {
         display: block;
@@ -113,7 +113,7 @@
 
     &--gratitude{
       text-align: center;
-      &>br{
+      & br{
         display: block;
         @media (min-width: 768px){
           display: none;

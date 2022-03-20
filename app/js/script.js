@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     })
 
-    const swiperCommon = new Swiper(".smi__swiper", {
+    const swiperCommon = new Swiper(".common__swiper", {
         slidesPerView: "auto",
         loop: true,
         spaceBetween: 20,

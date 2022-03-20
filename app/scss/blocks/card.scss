@@ -46,7 +46,7 @@
     margin-bottom: 50px;
     @media(min-width: 1024px){
       margin-bottom: 130px;
-      &>br{
+      & br{
         display: none;
       }
     }
@@ -101,7 +101,7 @@
         transition: all 0.5s ease-in-out;
         color: #517FAD;
         border-color: rgba(81,127,173, 0.2);
-        &>.card__icon{
+        .card__icon{
           transition: all 0.5s ease-in-out;
           color: #517FAD;
         }

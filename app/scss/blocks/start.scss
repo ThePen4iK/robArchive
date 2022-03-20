@@ -1,9 +1,6 @@
 .start{
   position: relative;
   min-height: 327px;
-
-
-
   &--prices{
     display: flex;
     align-items: flex-end;
@@ -83,7 +80,7 @@
         font-size: 48px;
         line-height: 58px;
       }
-      &>br{
+      & br{
         display: none;
         @media(min-width: 992px){
           display: block;

@@ -1,4 +1,8 @@
 .common{
+  &__swiper{
+    overflow: hidden;
+  }
+
   &__slide{
     flex: 0 0 309px;
     @media(min-width: 768px){

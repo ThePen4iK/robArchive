@@ -34,7 +34,6 @@
                             О компании
                         </a>
                     </li>
-
                     <li class="menu-item"><a class="menu-link" href="/news.html">Новости</a></li>
                     <li class="menu-item"><a class="menu-link" href="/vacancies.html" aria-current="page">Вакансии</a></li>
                     <li class="menu-item"><a class="menu-link" href="/prices.html">Цены</a></li>
@@ -277,9 +276,12 @@
         <form action="#" class="form form--vacancies">
             <div class="form__wrap">
                 <label for="email"></label>
+                <span class="form__error form__error--mod">Error</span>
                 <input class="form__input" type="email" id="email" placeholder="Ваша электронная почта">
             </div>
             <div class="form__wrap">
+                <span class="form__error form__error--textarea form__error--mod">Error</span>
+
                 <textarea class="form__textarea" name="textarea" id="textarea"
                           placeholder="Введите Ваше сообщение"></textarea>
             </div>

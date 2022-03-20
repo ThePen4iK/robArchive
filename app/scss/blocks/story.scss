@@ -5,14 +5,12 @@
     @media(min-width: 1200px) {
       display: flex;
     }
-
   }
 
   &__navigation {
     display: none;
     @media(min-width: 767px) {
       display: flex;
-
       margin-bottom: 20px;
     }
     @media(min-width: 1199px) {
@@ -23,11 +21,11 @@
 
       flex-direction: column;
       align-items: flex-start;
-      & > .arrow__prev--story {
+      & .arrow__prev--story {
         margin-bottom: 28px;
         transform: rotate(90deg);
       }
-      & > .arrow__next--story {
+      & .arrow__next--story {
         transform: rotate(90deg);
       }
     }
