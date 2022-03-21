@@ -12,13 +12,18 @@
   &--mod{
     border-bottom: 1px solid #9c9c9c;
     background: #FFFFFF;
+
+
+    .menu-item .menu-link{
+      color: #081f28;
+    }
+
+    .btn--header{
+      background: #0f3a4c;
+      color: #fff;
+    }
   }
 
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
   &__fixed {
     padding-top: 10px;

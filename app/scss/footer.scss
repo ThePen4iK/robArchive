@@ -11,17 +11,6 @@
     padding: 50px 0;
   }
 
-  &__container {
-    display: flex;
-    &--mod{
-      @media(min-width: 992px){
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-      }
-    }
-  }
 
   &__navigation {
     margin-left: 60px;

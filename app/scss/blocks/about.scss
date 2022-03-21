@@ -6,12 +6,7 @@
     padding-bottom: 200px;
   }
 
-  &__container{
-      position: relative;
-    @media(min-width: 950px){
-      display: flex;
-    }
-  }
+
   &__wrapper{
     margin-bottom: 30px;
     @media(min-width: 950px){

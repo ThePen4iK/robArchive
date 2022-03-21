@@ -21,27 +21,7 @@
       }
     }
   }
-  &__container{
-    padding: 0;
-    @media(min-width: 992px) {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: flex-end;
 
-      max-width: 1600px;
-      margin: 0;
-      padding: 0;
-      @media(min-width: 1601px) {
-        margin: 0 auto;
-      }
-    }
-    &--vacancies{
-      padding-top: 0;
-      @media(min-width: 768px){
-        display: flex;
-      }
-    }
-  }
   &__wrap{
     padding: 80px 15px 0;
     @media(min-width: 992px){

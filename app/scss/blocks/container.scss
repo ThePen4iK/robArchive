@@ -6,6 +6,67 @@
   margin: 0 auto;
 
   padding: 0 15px;
+
+  &--header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--info{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 0 15px;
+    @media(min-width: 1440px){
+      padding-left: 50px;
+    }
+    @media(min-width: 1599px){
+      padding-left: 100px;
+      max-width: 1600px;
+    }
+  }
+
+  &--about{
+    position: relative;
+    @media(min-width: 950px){
+      display: flex;
+    }
+  }
+
+  &--contact{
+    padding: 0;
+    @media(min-width: 992px) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+
+      max-width: 1600px;
+      margin: 0;
+      padding: 0;
+      @media(min-width: 1601px) {
+        margin: 0 auto;
+      }
+    }
+
+    &-vacancies{
+      padding-top: 0;
+      @media(min-width: 768px){
+        display: flex;
+      }
+    }
+  }
+
+  &--footer{
+    display: flex;
+    &-mod{
+      @media(min-width: 992px){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {

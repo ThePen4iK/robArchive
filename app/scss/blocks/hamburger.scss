@@ -33,7 +33,7 @@
     transform: translate(-50%, -50%);
 
 
-    & > .hamburger-line {
+    .hamburger-line {
       background-color: #0F3A4C;
       width: 19px;
       height: 1px;
@@ -45,6 +45,10 @@
   }
   &--mod{
     background: #0F3A4C;
+
+    .hamburger-menu .hamburger-line{
+      background: #FFFFFF;
+    }
   }
 }
 
