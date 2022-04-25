@@ -10,15 +10,15 @@
     display: none;
   }
 
-  @media(max-width: 576px) {
-    &:hover {
-      cursor: pointer;
-
-      .hamburger-menu span {
-        transform: rotate(-180deg);
-      }
-    }
-  }
+  //@media(max-width: 576px) {
+  //  &:hover {
+  //    cursor: pointer;
+  //
+  //    .hamburger-menu span {
+  //      transform: rotate(-180deg);
+  //    }
+  //  }
+  //}
 
   .hamburger-menu {
     width: 19px;

@@ -444,16 +444,6 @@ img {
     display: none;
   }
 }
-@media (max-width: 576px) {
-  .hamburger:hover {
-    cursor: pointer;
-  }
-  .hamburger:hover .hamburger-menu span {
-    -webkit-transform: rotate(-180deg);
-        -ms-transform: rotate(-180deg);
-            transform: rotate(-180deg);
-  }
-}
 .hamburger .hamburger-menu {
   width: 19px;
   height: 7px;
