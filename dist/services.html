@@ -1,57 +1,20 @@
 <!DOCTYPE html>
-<html lang=ru>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../img/favicon.svg" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css" />
-    <title>Contact</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../img/favicon.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css" />
+  <title>Main</title>
 </head>
 
+
 <body>
-<!--<header class="header header&#45;&#45;mod">-->
-<!--    <div class="container">-->
-<!--        <a href="index.html" class="logo">-->
-<!--            <svg class="logo-icon logo-icon&#45;&#45;mod" width="101" height="52">-->
-<!--                <use xlink:href="./img/sprite.svg#logo"></use>-->
-<!--            </svg>-->
-<!--        </a>-->
-<!--        <div class="header__wrapper">-->
-<!--            <nav class="header__navigation ">-->
-<!--                <ul id="menu-menyu-v-shapke-sajta" class="header__list">-->
-<!--                    <li class="menu-item">-->
-<!--                        <a class="menu-link" href="/">-->
-<!--                            Главная-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="menu-item">-->
-<!--                        <a class="menu-link" href="/about.html">-->
-<!--                            О компании-->
-<!--                        </a>-->
-<!--                    </li>-->
-
-<!--                    <li class="menu-item"><a class="menu-link" href="/news.html">Новости</a></li>-->
-<!--                    <li class="menu-item"><a class="menu-link" href="/vacancies.html" aria-current="page">Вакансии</a></li>-->
-<!--                    <li class="menu-item"><a class="menu-link" href="/prices.html">Цены</a></li>-->
-<!--                </ul>-->
-<!--            </nav>-->
-<!--            <button class="btn btn&#45;&#45;header btn&#45;&#45;header&#45;&#45;mod">Связаться</button>-->
-<!--        </div>-->
-<!--        <button class="hamburger hamburger&#45;&#45;mod">-->
-<!--            <div class="hamburger-menu">-->
-<!--                <span class="hamburger-line hamburger-line&#45;&#45;mod"></span>-->
-<!--                <span class="hamburger-line hamburger-line&#45;&#45;mod"></span>-->
-<!--            </div>-->
-<!--        </button>-->
-<!--    </div>-->
-<!--</header>-->
-
-
-<header class="header header--mod">
+<header class="header">
     <div class="container container--header">
         <a href="index.html" class="logo">
             <svg class="logo-icon" width="101" height="52">
@@ -71,7 +34,6 @@
                             О компании
                         </a>
                     </li>
-
                     <li class="menu-item"><a class="menu-link" href="/news.html">Новости</a></li>
                     <li class="menu-item"><a class="menu-link" href="/vacancies.html" aria-current="page">Вакансии</a></li>
                     <li class="menu-item"><a class="menu-link" href="/prices.html">Цены</a></li>
@@ -79,7 +41,7 @@
             </nav>
             <button class="btn btn--header">Связаться</button>
         </div>
-        <button class="hamburger hamburger--mod">
+        <button class="hamburger">
             <div class="hamburger-menu">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
@@ -87,61 +49,115 @@
         </button>
     </div>
 </header>
+
 <main class="main-section">
-    <section class="section address">
+    <section class="start js-main start--prices" >
+    <div class="start__bg">
+        <picture class="picture">
+            <source
+                    media="(min-width: 600px)"
+                    srcset="../img/start-bg-services-descr.jpg, ../img/start-bg-services-descr@2x.jpg 1.25"
+            />
+            <img src="../img/start-bg-services.jpg" alt="start bg">
+        </picture>
+    </div>
     <div class="container">
-        <h1 class="address__title title">Контакты</h1>
-        <address class="address__content">
-            <ul class="address__list">
-                <li class="address__item">
-                    <h4>Адрес</h4>
-                    <p>г. Москва, <br>
-                        ТиНАО, д. Сахарово</p>
+        <div class="start__wrapper">
+            <h1 class="title start__title">Услуги</h1>
+        </div>
+    </div>
+</section>
+
+
+    <section class="section">
+    <div class="container">
+        <h2 class="title">
+            Перечень услуг
+        </h2>
+
+        <div class="services__wrapper">
+
+            <ul class="services__list">
+                <li class="services__item">
+                    <span class="services__number">01</span>
+                    <div class="services__wrap">
+                        <p class="services__title">Оказание комплекса услуг в организациях заказчиков</p>
+                        <p class="services__text">Для проведения экспертизы ценности, упорядочения, приема на хранение
+                            документов по личному составу и выделение к уничтожению документов, с истекшими сроками
+                            хранения</p>
+                        <a href="#" class="services__link">Стоимость
+                            <svg class="card__icon" width="15" height="15">
+                                <use xlink:href="../img/sprite.svg#works-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <img class="services__img" src="../img/services-1.jpg" alt="servises 1">
                 </li>
-                <li class="address__item">
-                    <h4>Телефон</h4>
-                    <p>+7 777 777 77 </p>
+
+                <li class="services__item">
+                    <span class="services__number">02</span>
+                    <div class="services__wrap">
+                        <p class="services__title">Хранение и учет документов по личному составу </p>
+                        <p class="services__text">Для юридических лиц, принятых ранее истечения сроков ведомственного
+                            хранения или на временное хранение на договорной основе</p>
+                        <a href="#" class="services__link">Стоимость
+                            <svg class="card__icon" width="15" height="15">
+                                <use xlink:href="../img/sprite.svg#works-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <img class="services__img" src="../img/services-2.jpg" alt="servises 2">
                 </li>
-                <li class="address__item">
-                    <h4>Почта</h4>
-                    <p>archiv@gmail.com</p>
+
+                <li class="services__item">
+                    <span class="services__number">03</span>
+                    <div class="services__wrap">
+                        <p class="services__title">Депозитарное хранение </p>
+                        <p class="services__text">(Внеофисное хранение) документов временного срока хранения учреждений и организаций различных форм собственности</p>
+                        <a href="#" class="services__link">Стоимость
+                            <svg class="card__icon" width="15" height="15">
+                                <use xlink:href="../img/sprite.svg#works-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <img class="services__img" src="../img/services-3.jpg" alt="servises 3">
+                </li>
+
+                <li class="services__item">
+                    <span class="services__number">04</span>
+                    <div class="services__wrap">
+                        <p class="services__title">Проверка наличия дел по личному составу</p>
+                        <p class="services__text">Проверка наличия дел по личному составу в архиве организации с оформлением акта</p>
+                        <a href="#" class="services__link">Стоимость
+                            <svg class="card__icon" width="15" height="15">
+                                <use xlink:href="../img/sprite.svg#works-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <img class="services__img" src="../img/services-4.jpg" alt="servises 4">
+                </li>
+
+                <li class="services__item">
+                    <span class="services__number">05</span>
+                    <div class="services__wrap">
+                        <p class="services__title">Стажировка работников по вопросам архивного дела </p>
+                        <p class="services__text">Стажировка работников по вопросам архивного дела по направлению заинтересованной организации или по желанию специалиста</p>
+                        <a href="#" class="services__link">Стоимость
+                            <svg class="card__icon" width="15" height="15">
+                                <use xlink:href="../img/sprite.svg#works-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <img class="services__img" src="../img/services-5.jpg" alt="servises 5">
                 </li>
             </ul>
-        </address>
-        <iframe class="address__map"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
-        </iframe>
-    </div>
-</section>
-    <section class="contact section contact--vacancies">
-    <div class="container contact__container--vacancies">
-        <div class="contact__wrapper contact__wrapper--contact">
-            <h2 class="contact__title contact__title--vacancies title">Связаться с нами </h2>
-            <p class="contact__text text contact__text--contact">Заполните форму, и наш специалист с вами свяжется</p>
         </div>
-        <form action="#" class="form form--vacancies">
-            <div class="form__wrap">
-                <label for="email"></label>
-<!--                <span class="form__error form__error&#45;&#45;mod">Error</span>-->
-                <input class="form__input" type="email" id="email" placeholder="Ваша электронная почта">
-            </div>
-            <div class="form__wrap">
-<!--                <span class="form__error form__error&#45;&#45;textarea form__error&#45;&#45;mod">Error</span>-->
-                <textarea class="form__textarea" name="textarea" id="textarea"
-                          placeholder="Введите Ваше сообщение"></textarea>
-            </div>
-            <div class="form__wrap">
-                <label for="checkbox" class="form__checkbox">
-                    <input type="checkbox" class="form__checkbox-input " id="checkbox">
-                    <p class="form__text">Я соглашаюсь с <a href="#" class="form__link">Политикой конфиденциальности</a>
-                    </p>
-                </label>
-            </div>
-
-            <button class="btn btn--common form__btn form__btn--mod ">Связаться</button>
-        </form>
     </div>
 </section>
+
+
+
+
 </main>
 <footer class="footer">
     <div class="footer__top">
@@ -307,4 +323,5 @@
 </footer>
 <script src="js/script.min.js"></script>
 </body>
+
 </html>
